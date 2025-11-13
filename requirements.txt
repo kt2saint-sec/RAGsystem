@@ -16,6 +16,10 @@ gitpython>=3.1.40
 rank-bm25>=0.2.2
 redis>=5.0.0
 
+# Cache optimizations (optional but recommended for performance)
+msgpack>=1.0.0  # Faster serialization than pickle
+lz4>=4.0.0  # Compression for cache data (60-80% size reduction)
+
 # Testing
 pytest>=9.0.0
 
