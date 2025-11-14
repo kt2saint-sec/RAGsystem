@@ -617,7 +617,74 @@ async def get_available_technologies() -> str:
         return f"Error loading technologies: {e}"
 
 
+# Production enhancements
+try:
+    from health_checks import health_checker
+    from cache_warmer import cache_warmer
+    from gpu_verification import GPUVerifier
+    PRODUCTION_FEATURES = True
+except ImportError as e:
+    logger.warning(f"Production features not available: {e}")
+    PRODUCTION_FEATURES = False
+
+
+@mcp.tool()
+async def health_check() -> Dict[str, Any]:
+    """
+    Get system health status.
+
+    Returns comprehensive health check including ChromaDB, Redis, and embedding model status.
+    """
+    if not PRODUCTION_FEATURES:
+        return {"error": "Health check not available"}
+
+    return await health_checker.readiness()
+
+
+@mcp.tool()
+async def get_cache_warming_stats() -> Dict[str, Any]:
+    """
+    Get cache warming statistics.
+
+    Shows top queries, hit counts, and cache warming effectiveness.
+    """
+    if not PRODUCTION_FEATURES:
+        return {"error": "Cache warming not available"}
+
+    return cache_warmer.get_stats()
+
+
+@mcp.tool()
+async def verify_gpu_acceleration() -> Dict[str, Any]:
+    """
+    Verify GPU acceleration is working.
+
+    Checks PyTorch GPU support and benchmarks CPU vs GPU performance.
+    """
+    if not PRODUCTION_FEATURES:
+        return {"error": "GPU verification not available"}
+
+    verifier = GPUVerifier()
+    return verifier.run_verification()
+
+
+# Integrate cache warming tracking into queries
+original_query_kb = query_knowledge_base
+
+
+async def query_knowledge_base_with_tracking(*args, **kwargs):
+    """Wrapper to track queries for cache warming"""
+    if PRODUCTION_FEATURES:
+        query = kwargs.get('query') or (args[0] if args else None)
+        tech_filter = kwargs.get('technology_filter')
+        if query:
+            cache_warmer.track_query(query, tech_filter)
+
+    return await original_query_kb(*args, **kwargs)
+
+
 # Run server
 if __name__ == "__main__":
     logger.info("Starting RAG Knowledge Base MCP Server...")
+    logger.info(f"Production features: {'enabled' if PRODUCTION_FEATURES else 'disabled'}")
     mcp.run(transport="stdio")
