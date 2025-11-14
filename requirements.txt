@@ -28,3 +28,19 @@ pytest>=9.0.0
 # - ROCm: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2
 # - CUDA: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 # - CPU only: pip install torch torchvision torchaudio
+
+# Production enhancements
+pybreaker>=1.0.0          # Circuit breaker pattern
+tenacity>=8.0.0           # Retry logic with exponential backoff
+apscheduler>=3.10.0       # Scheduled tasks for cache warming
+prometheus-fastapi-instrumentator>=6.0.0  # Metrics instrumentation
+
+# Week 3 enhancements - Query expansion and hybrid search
+nltk==3.9.1               # Natural language processing for query expansion
+spacy==3.8.2              # Advanced NLP and entity recognition
+streamlit==1.39.0         # Web dashboard framework
+plotly==5.24.1            # Interactive visualizations
+httpx>=0.28.1             # Async HTTP client (compatible with FastMCP)
+fastapi==0.115.5          # REST API framework
+uvicorn[standard]==0.32.1 # ASGI server for FastAPI
+slowapi==0.1.9            # Rate limiting for API
