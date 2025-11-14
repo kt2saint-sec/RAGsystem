@@ -617,7 +617,7 @@ async def get_available_technologies() -> str:
         return f"Error loading technologies: {e}"
 
 
-# Production enhancements
+# Production enhancements (Week 2)
 try:
     from health_checks import health_checker
     from cache_warmer import cache_warmer
@@ -626,6 +626,34 @@ try:
 except ImportError as e:
     logger.warning(f"Production features not available: {e}")
     PRODUCTION_FEATURES = False
+
+# Week 3 enhancements - Hybrid search and query analytics
+try:
+    from bm25_indexer import BM25Indexer
+    from rrf_fusion import ReciprocalRankFusion
+    from query_analytics import QueryAnalytics
+    WEEK3_FEATURES = True
+
+    # Initialize hybrid search components
+    logger.info("Loading BM25 index for hybrid search...")
+    bm25_indexer = BM25Indexer()
+    try:
+        bm25_indexer.load_index()
+        logger.info(f"✓ BM25 index loaded ({len(bm25_indexer.documents)} documents)")
+    except FileNotFoundError:
+        logger.warning("BM25 index not found. Run: python bm25_indexer.py to build index")
+        logger.warning("Hybrid search will be unavailable until index is built")
+        bm25_indexer = None
+
+    rrf_fusion = ReciprocalRankFusion(k=60)
+    query_analytics = QueryAnalytics()
+
+except ImportError as e:
+    logger.warning(f"Week 3 features not available: {e}")
+    WEEK3_FEATURES = False
+    bm25_indexer = None
+    rrf_fusion = None
+    query_analytics = None
 
 
 @mcp.tool()
@@ -668,17 +696,228 @@ async def verify_gpu_acceleration() -> Dict[str, Any]:
     return verifier.run_verification()
 
 
-# Integrate cache warming tracking into queries
+# Week 3 Tools - Hybrid Search and Query Analytics
+
+@mcp.tool()
+async def hybrid_search(
+    query: str,
+    collection_name: str = "coding_knowledge",
+    top_k: int = 5,
+    technology_filter: Optional[str] = None,
+    semantic_weight: float = 0.6,
+    keyword_weight: float = 0.4
+) -> Dict[str, Any]:
+    """
+    Hybrid search combining semantic (vector) and keyword (BM25) retrieval.
+
+    This tool provides superior retrieval accuracy by combining:
+    - Semantic search: Understands meaning and context (ChromaDB)
+    - Keyword search: Exact term matching (BM25)
+    - Reciprocal Rank Fusion: Intelligent score combination
+
+    Args:
+        query: Natural language search query
+        collection_name: ChromaDB collection (default: "coding_knowledge")
+        top_k: Number of results to return (1-20, default: 5)
+        technology_filter: Optional technology filter
+        semantic_weight: Weight for semantic results (0-1, default: 0.6)
+        keyword_weight: Weight for keyword results (0-1, default: 0.4)
+
+    Returns:
+        Dictionary containing fused results with RRF scores, retrieval methods,
+        and fusion configuration.
+
+    Performance: ~10-15ms (semantic + keyword + fusion)
+
+    When to use:
+        - Queries with specific technical terms (e.g., "React useState hook")
+        - Acronyms and abbreviations (e.g., "JWT authentication")
+        - Exact API method names (e.g., "fetch() vs XMLHttpRequest")
+    """
+    if not WEEK3_FEATURES or not bm25_indexer:
+        # Fallback to semantic-only search
+        logger.warning("Hybrid search unavailable, falling back to semantic search")
+        return await query_knowledge_base(query, collection_name, top_k, technology_filter)
+
+    try:
+        # Normalize weights
+        total_weight = semantic_weight + keyword_weight
+        semantic_weight /= total_weight
+        keyword_weight /= total_weight
+
+        logger.info(f"Hybrid search: '{query}' | Weights: S={semantic_weight:.2f}, K={keyword_weight:.2f}")
+
+        # 1. Semantic search (existing implementation)
+        semantic_results_raw = await query_knowledge_base(
+            query=query,
+            collection_name=collection_name,
+            top_k=top_k * 2,  # Retrieve more for better fusion
+            technology_filter=technology_filter
+        )
+
+        semantic_results = semantic_results_raw.get("results", [])
+
+        # 2. Keyword search (BM25)
+        keyword_results = bm25_indexer.search(
+            query=query,
+            top_k=top_k * 2,
+            technology_filter=technology_filter
+        )
+
+        # 3. Fuse results using RRF
+        fused_results = rrf_fusion.fuse(
+            semantic_results=semantic_results,
+            keyword_results=keyword_results,
+            semantic_weight=semantic_weight,
+            keyword_weight=keyword_weight
+        )
+
+        return {
+            "query": query,
+            "collection": collection_name,
+            "technology_filter": technology_filter,
+            "results": fused_results[:top_k],
+            "total_found": len(fused_results),
+            "fusion_config": {
+                "semantic_weight": round(semantic_weight, 2),
+                "keyword_weight": round(keyword_weight, 2),
+                "rrf_k": rrf_fusion.k
+            },
+            "retrieval_stats": {
+                "semantic_candidates": len(semantic_results),
+                "keyword_candidates": len(keyword_results),
+                "fused_unique_docs": len(fused_results)
+            }
+        }
+
+    except Exception as e:
+        logger.error(f"Hybrid search failed: {e}", exc_info=True)
+        return {"error": str(e), "query": query}
+
+
+@mcp.tool()
+async def autocomplete_query(
+    partial_query: str,
+    limit: int = 5,
+    technology_filter: Optional[str] = None
+) -> Dict[str, Any]:
+    """
+    Get autocomplete suggestions based on partial query input.
+
+    Provides real-time query suggestions based on:
+    - Historical query frequency (most popular queries)
+    - Prefix matching (queries starting with your input)
+    - Technology-specific filtering
+
+    Args:
+        partial_query: User's current input (minimum 2 characters)
+        limit: Maximum suggestions to return (1-10, default: 5)
+        technology_filter: Optional filter by technology
+
+    Returns:
+        Dictionary with suggestions including query text, frequency,
+        technology filter, and last seen timestamp.
+
+    Performance: <1ms (Redis sorted set lookup)
+
+    Use Cases:
+        - Search box autocomplete
+        - Query suggestion dropdowns
+        - "Did you mean?" functionality
+        - Popular queries discovery
+    """
+    if not WEEK3_FEATURES or not query_analytics:
+        return {"error": "Autocomplete not available"}
+
+    try:
+        if len(partial_query) < 2 and partial_query.strip():
+            return {"error": "Partial query must be at least 2 characters"}
+
+        if limit < 1 or limit > 10:
+            limit = min(max(limit, 1), 10)
+
+        suggestions = query_analytics.get_autocomplete_suggestions(
+            partial_query=partial_query,
+            limit=limit,
+            technology_filter=technology_filter
+        )
+
+        return {
+            "partial_query": partial_query,
+            "suggestions": suggestions,
+            "total_suggestions": len(suggestions),
+            "technology_filter": technology_filter
+        }
+
+    except Exception as e:
+        logger.error(f"Autocomplete failed: {e}", exc_info=True)
+        return {"error": str(e)}
+
+
+@mcp.tool()
+async def get_popular_queries(
+    limit: int = 20,
+    technology_filter: Optional[str] = None
+) -> Dict[str, Any]:
+    """
+    Get most popular queries by frequency.
+
+    Use this to discover what users are searching for most often.
+
+    Args:
+        limit: Number of queries to return (1-50, default: 20)
+        technology_filter: Optional filter by technology
+
+    Returns:
+        Dictionary with popular queries, frequencies, and metadata.
+
+    Use Cases:
+        - Understanding user needs
+        - Identifying documentation gaps
+        - Cache warming priorities
+        - Analytics dashboards
+    """
+    if not WEEK3_FEATURES or not query_analytics:
+        return {"error": "Query analytics not available"}
+
+    try:
+        if limit < 1 or limit > 50:
+            limit = min(max(limit, 1), 50)
+
+        queries = query_analytics.get_top_queries(limit=limit)
+
+        # Filter by technology if specified
+        if technology_filter:
+            queries = [q for q in queries if q.get("technology_filter") == technology_filter]
+
+        return {
+            "queries": queries[:limit],
+            "total_returned": len(queries[:limit]),
+            "technology_filter": technology_filter
+        }
+
+    except Exception as e:
+        logger.error(f"Get popular queries failed: {e}", exc_info=True)
+        return {"error": str(e)}
+
+
+# Integrate cache warming AND query analytics tracking
 original_query_kb = query_knowledge_base
 
 
 async def query_knowledge_base_with_tracking(*args, **kwargs):
-    """Wrapper to track queries for cache warming"""
-    if PRODUCTION_FEATURES:
-        query = kwargs.get('query') or (args[0] if args else None)
-        tech_filter = kwargs.get('technology_filter')
-        if query:
+    """Wrapper to track queries for cache warming and analytics"""
+    query = kwargs.get('query') or (args[0] if args else None)
+    tech_filter = kwargs.get('technology_filter')
+
+    if query:
+        # Track for cache warming (Week 2)
+        if PRODUCTION_FEATURES:
             cache_warmer.track_query(query, tech_filter)
+
+        # Track for query analytics (Week 3)
+        if WEEK3_FEATURES and query_analytics:
+            query_analytics.track_query(query, tech_filter)
 
     return await original_query_kb(*args, **kwargs)
 
