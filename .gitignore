@@ -62,3 +62,16 @@ tmp/
 temp/
 *.tmp
 bm25_index.pkl
+
+# Ingestion logs
+*_ingestion.log
+nextjs_ingestion.log
+react19_ingestion.log
+typescript_ingestion.log
+
+# Downloaded repositories (regenerable via acquisition_agent.py)
+data/repos/
+data/scraped/
+
+# Test/experimental directories
+gimp/
