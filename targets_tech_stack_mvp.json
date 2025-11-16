@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Next.js 16 Documentation",
+    "type": "git",
+    "url": "https://github.com/vercel/next.js.git",
+    "destination": "repos/nextjs_16",
+    "description": "Next.js 16.0.3 official repository with documentation, examples, and type definitions"
+  },
+  {
+    "name": "React 19 Documentation",
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "destination": "repos/react_19",
+    "description": "React 19.2.0 stable - official repository with hooks, concurrent features, and TypeScript support"
+  },
+  {
+    "name": "TypeScript Handbook",
+    "type": "git",
+    "url": "https://github.com/microsoft/TypeScript-Handbook.git",
+    "destination": "repos/typescript_handbook",
+    "description": "Official TypeScript 5.x handbook with advanced types, generics, and best practices"
+  },
+  {
+    "name": "Radix UI Documentation",
+    "type": "git",
+    "url": "https://github.com/radix-ui/primitives.git",
+    "destination": "repos/radix_ui",
+    "description": "Radix UI primitives - 25+ accessible, unstyled React components"
+  },
+  {
+    "name": "Tailwind CSS Documentation",
+    "type": "git",
+    "url": "https://github.com/tailwindlabs/tailwindcss.git",
+    "destination": "repos/tailwindcss",
+    "description": "Tailwind CSS 3.4.18 - utility-first CSS framework with JIT compiler"
+  },
+  {
+    "name": "Zustand State Management",
+    "type": "git",
+    "url": "https://github.com/pmndrs/zustand.git",
+    "destination": "repos/zustand",
+    "description": "Lightweight React state management with TypeScript support and DevTools"
+  },
+  {
+    "name": "TanStack Query Documentation",
+    "type": "git",
+    "url": "https://github.com/TanStack/query.git",
+    "destination": "repos/tanstack_query",
+    "description": "Powerful async state management for React with caching, pagination, and optimistic updates"
+  },
+  {
+    "name": "React Hook Form",
+    "type": "git",
+    "url": "https://github.com/react-hook-form/react-hook-form.git",
+    "destination": "repos/react_hook_form",
+    "description": "Performant, flexible form library with validation and TypeScript support"
+  },
+  {
+    "name": "Zod Validation",
+    "type": "git",
+    "url": "https://github.com/colinhacks/zod.git",
+    "destination": "repos/zod",
+    "description": "TypeScript-first schema validation with static type inference"
+  },
+  {
+    "name": "Lucide React Icons",
+    "type": "git",
+    "url": "https://github.com/lucide-icons/lucide.git",
+    "destination": "repos/lucide_icons",
+    "description": "487+ beautiful, consistent open-source icons for React"
+  },
+  {
+    "name": "ws WebSocket Library",
+    "type": "git",
+    "url": "https://github.com/websockets/ws.git",
+    "destination": "repos/ws_websocket",
+    "description": "WebSocket 8.18.0 - fast, standards-compliant WebSocket implementation for Node.js"
+  },
+  {
+    "name": "Tus.js Resumable Uploads",
+    "type": "git",
+    "url": "https://github.com/tus/tus-js-client.git",
+    "destination": "repos/tus_js",
+    "description": "Resumable file upload protocol implementation with chunking and retry logic"
+  },
+  {
+    "name": "Flutter Documentation",
+    "type": "git",
+    "url": "https://github.com/flutter/flutter.git",
+    "destination": "repos/flutter_sdk",
+    "description": "Flutter SDK - Google's UI toolkit for web, mobile, desktop from single codebase"
+  },
+  {
+    "name": "Dart Language Tour",
+    "type": "git",
+    "url": "https://github.com/dart-lang/site-www.git",
+    "destination": "repos/dart_docs",
+    "description": "Dart 3.4.0+ language documentation with null safety and pattern matching"
+  },
+  {
+    "name": "Riverpod State Management",
+    "type": "git",
+    "url": "https://github.com/rrousselGit/riverpod.git",
+    "destination": "repos/riverpod",
+    "description": "Riverpod 2.5.1 - compile-safe, testable state management for Flutter"
+  },
+  {
+    "name": "GoRouter Flutter Navigation",
+    "type": "git",
+    "url": "https://github.com/flutter/packages.git",
+    "destination": "repos/flutter_packages",
+    "description": "go_router 14.2.0 - declarative routing with deep linking and type safety"
+  },
+  {
+    "name": "FastAPI Documentation",
+    "type": "git",
+    "url": "https://github.com/tiangolo/fastapi.git",
+    "destination": "repos/fastapi",
+    "description": "FastAPI 0.104.1 - high-performance Python web framework with automatic OpenAPI docs"
+  },
+  {
+    "name": "Pydantic Documentation",
+    "type": "git",
+    "url": "https://github.com/pydantic/pydantic.git",
+    "destination": "repos/pydantic",
+    "description": "Pydantic 2.5.0 - data validation using Python type annotations"
+  },
+  {
+    "name": "Pillow Image Processing",
+    "type": "git",
+    "url": "https://github.com/python-pillow/Pillow.git",
+    "destination": "repos/pillow",
+    "description": "PIL fork for image manipulation, format conversion, and filters"
+  },
+  {
+    "name": "OpenCV Python",
+    "type": "git",
+    "url": "https://github.com/opencv/opencv-python.git",
+    "destination": "repos/opencv_python",
+    "description": "Computer vision library with image processing, object detection, and ML"
+  },
+  {
+    "name": "scikit-image",
+    "type": "git",
+    "url": "https://github.com/scikit-image/scikit-image.git",
+    "destination": "repos/scikit_image",
+    "description": "Image processing algorithms for segmentation, feature extraction, and filtering"
+  },
+  {
+    "name": "rembg Background Removal",
+    "type": "git",
+    "url": "https://github.com/danielgatis/rembg.git",
+    "destination": "repos/rembg",
+    "description": "AI-powered background removal using U2-Net deep learning model"
+  },
+  {
+    "name": "PyTorch Documentation",
+    "type": "git",
+    "url": "https://github.com/pytorch/pytorch.git",
+    "destination": "repos/pytorch_docs",
+    "description": "PyTorch deep learning framework with GPU acceleration and autograd"
+  },
+  {
+    "name": "ONNX Runtime",
+    "type": "git",
+    "url": "https://github.com/microsoft/onnxruntime.git",
+    "destination": "repos/onnx_runtime",
+    "description": "ONNX Runtime GPU - cross-platform ML inference with hardware acceleration"
+  },
+  {
+    "name": "OpenAI Python SDK",
+    "type": "git",
+    "url": "https://github.com/openai/openai-python.git",
+    "destination": "repos/openai_python",
+    "description": "Official OpenAI Python library for DALL-E 3, GPT-4, and embeddings API"
+  },
+  {
+    "name": "Gradio",
+    "type": "git",
+    "url": "https://github.com/gradio-app/gradio.git",
+    "destination": "repos/gradio",
+    "description": "Build ML web UIs for Stable Diffusion and custom models with Python"
+  },
+  {
+    "name": "Numba JIT Compiler",
+    "type": "git",
+    "url": "https://github.com/numba/numba.git",
+    "destination": "repos/numba",
+    "description": "NumPy-aware JIT compiler for 50-200x Python speedup with GPU support"
+  },
+  {
+    "name": "SQLAlchemy ORM",
+    "type": "git",
+    "url": "https://github.com/sqlalchemy/sqlalchemy.git",
+    "destination": "repos/sqlalchemy",
+    "description": "Python SQL toolkit and ORM with PostgreSQL support and async capabilities"
+  },
+  {
+    "name": "Alembic Database Migrations",
+    "type": "git",
+    "url": "https://github.com/sqlalchemy/alembic.git",
+    "destination": "repos/alembic",
+    "description": "Database migration tool for SQLAlchemy with auto-generation"
+  },
+  {
+    "name": "PostgreSQL Documentation",
+    "type": "web_scrape",
+    "url": "https://www.postgresql.org/docs/current/",
+    "destination": "scraped/postgresql_docs",
+    "description": "PostgreSQL database documentation with advanced SQL, indexing, and performance tuning"
+  },
+  {
+    "name": "PyJWT",
+    "type": "git",
+    "url": "https://github.com/jpadilla/pyjwt.git",
+    "destination": "repos/pyjwt",
+    "description": "JSON Web Token implementation for authentication and authorization"
+  },
+  {
+    "name": "bcrypt Password Hashing",
+    "type": "git",
+    "url": "https://github.com/pyca/bcrypt.git",
+    "destination": "repos/bcrypt",
+    "description": "Modern password hashing with adaptive cost factor"
+  },
+  {
+    "name": "PyOTP 2FA",
+    "type": "git",
+    "url": "https://github.com/pyauth/pyotp.git",
+    "destination": "repos/pyotp",
+    "description": "TOTP/HOTP two-factor authentication implementation"
+  },
+  {
+    "name": "cryptography Fernet",
+    "type": "git",
+    "url": "https://github.com/pyca/cryptography.git",
+    "destination": "repos/cryptography",
+    "description": "Fernet symmetric encryption, certificates, and cryptographic primitives"
+  },
+  {
+    "name": "Loguru Logging",
+    "type": "git",
+    "url": "https://github.com/Delgan/loguru.git",
+    "destination": "repos/loguru",
+    "description": "Python logging made simple with rotation, retention, and color output"
+  },
+  {
+    "name": "structlog Structured Logging",
+    "type": "git",
+    "url": "https://github.com/hynek/structlog.git",
+    "destination": "repos/structlog",
+    "description": "Structured logging for better log analysis and debugging"
+  },
+  {
+    "name": "Prometheus Python Client",
+    "type": "git",
+    "url": "https://github.com/prometheus/client_python.git",
+    "destination": "repos/prometheus_python",
+    "description": "Prometheus metrics instrumentation library for Python"
+  },
+  {
+    "name": "Docker Documentation",
+    "type": "git",
+    "url": "https://github.com/docker/docs.git",
+    "destination": "repos/docker_docs",
+    "description": "Docker 24.0+ containerization platform with multi-stage builds"
+  },
+  {
+    "name": "Docker Compose",
+    "type": "git",
+    "url": "https://github.com/docker/compose.git",
+    "destination": "repos/docker_compose",
+    "description": "Docker Compose 2.20.2+ for multi-container orchestration"
+  },
+  {
+    "name": "ROCm AMD GPU",
+    "type": "git",
+    "url": "https://github.com/RadeonOpenCompute/ROCm.git",
+    "destination": "repos/rocm",
+    "description": "AMD ROCm platform for GPU computing on 7900 XTX"
+  },
+  {
+    "name": "ESLint",
+    "type": "git",
+    "url": "https://github.com/eslint/eslint.git",
+    "destination": "repos/eslint",
+    "description": "JavaScript/TypeScript linter with pluggable rules"
+  },
+  {
+    "name": "Black Python Formatter",
+    "type": "git",
+    "url": "https://github.com/psf/black.git",
+    "destination": "repos/black",
+    "description": "Opinionated Python code formatter for consistent style"
+  },
+  {
+    "name": "mypy Type Checker",
+    "type": "git",
+    "url": "https://github.com/python/mypy.git",
+    "destination": "repos/mypy",
+    "description": "Static type checker for Python with gradual typing"
+  },
+  {
+    "name": "OpenAPI TypeScript Generator",
+    "type": "git",
+    "url": "https://github.com/ferdikoomen/openapi-typescript-codegen.git",
+    "destination": "repos/openapi_typescript_gen",
+    "description": "Generate TypeScript clients from OpenAPI specifications"
+  },
+  {
+    "name": "UI/UX Design for Developers",
+    "type": "web_scrape",
+    "url": "https://www.refactoringui.com/",
+    "destination": "scraped/refactoring_ui",
+    "description": "Practical UI design tips for developers building MVPs"
+  },
+  {
+    "name": "shadcn/ui Components",
+    "type": "git",
+    "url": "https://github.com/shadcn-ui/ui.git",
+    "destination": "repos/shadcn_ui",
+    "description": "Beautifully designed Radix UI + Tailwind components for rapid prototyping"
+  },
+  {
+    "name": "Packaging Python Apps",
+    "type": "git",
+    "url": "https://github.com/pyinstaller/pyinstaller.git",
+    "destination": "repos/pyinstaller",
+    "description": "Package Python apps into standalone executables for Windows, Mac, Linux"
+  },
+  {
+    "name": "Electron App Packaging",
+    "type": "git",
+    "url": "https://github.com/electron/electron.git",
+    "destination": "repos/electron",
+    "description": "Build cross-platform desktop apps with web technologies"
+  },
+  {
+    "name": "Tauri App Framework",
+    "type": "git",
+    "url": "https://github.com/tauri-apps/tauri.git",
+    "destination": "repos/tauri",
+    "description": "Lightweight Rust-based desktop app framework with smaller binaries than Electron"
+  },
+  {
+    "name": "PyOxidizer Python Compilation",
+    "type": "git",
+    "url": "https://github.com/indygreg/PyOxidizer.git",
+    "destination": "repos/pyoxidizer",
+    "description": "Modern Python application packaging and distribution with native compilation"
+  },
+  {
+    "name": "Nuitka Python Compiler",
+    "type": "git",
+    "url": "https://github.com/Nuitka/Nuitka.git",
+    "destination": "repos/nuitka",
+    "description": "Compile Python to C for performance and standalone distribution"
+  },
+  {
+    "name": "Background Removal Techniques",
+    "type": "git",
+    "url": "https://github.com/PeterL1n/RobustVideoMatting.git",
+    "destination": "repos/robust_video_matting",
+    "description": "Advanced background removal for images and video using deep learning"
+  },
+  {
+    "name": "Modern Web Design Patterns",
+    "type": "git",
+    "url": "https://github.com/kamranahmedse/design-patterns-for-humans.git",
+    "destination": "repos/design_patterns_humans",
+    "description": "Software design patterns explained with practical examples"
+  },
+  {
+    "name": "Software Architecture Patterns",
+    "type": "web_scrape",
+    "url": "https://www.patterns.dev/",
+    "destination": "scraped/patterns_dev",
+    "description": "Modern web app architecture patterns with React and performance optimization"
+  },
+  {
+    "name": "Linux Packaging Guide",
+    "type": "web_scrape",
+    "url": "https://packaging.python.org/",
+    "destination": "scraped/python_packaging_guide",
+    "description": "Official Python packaging guide for distributing on Linux, Windows, and macOS"
+  },
+  {
+    "name": "Uvicorn ASGI Server",
+    "type": "git",
+    "url": "https://github.com/encode/uvicorn.git",
+    "destination": "repos/uvicorn",
+    "description": "Lightning-fast ASGI server for FastAPI with WebSocket support"
+  },
+  {
+    "name": "NumPy Scientific Computing",
+    "type": "git",
+    "url": "https://github.com/numpy/numpy.git",
+    "destination": "repos/numpy",
+    "description": "Fundamental package for numerical computing in Python with array operations"
+  },
+  {
+    "name": "Awesome Python",
+    "type": "git",
+    "url": "https://github.com/vinta/awesome-python.git",
+    "destination": "repos/awesome_python",
+    "description": "Curated list of awesome Python frameworks, libraries, and software"
+  },
+  {
+    "name": "Awesome React",
+    "type": "git",
+    "url": "https://github.com/enaqx/awesome-react.git",
+    "destination": "repos/awesome_react",
+    "description": "Collection of awesome React resources, tools, and best practices"
+  },
+  {
+    "name": "Web Security OWASP",
+    "type": "git",
+    "url": "https://github.com/OWASP/CheatSheetSeries.git",
+    "destination": "repos/owasp_cheatsheets",
+    "description": "OWASP security cheat sheets for JWT, authentication, XSS, SQL injection prevention"
+  }
+]
