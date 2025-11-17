@@ -1,0 +1,156 @@
+Flutter Docs
+Flutter Samples
+n8n Docs
+Stripe Docs
+Next.js Docs (Vercel)
+FastAPI Docs
+Figma API Docs
+Rust Book
+Supabase Docs
+Firebase Docs
+MDN HTML Docs
+cppreference.com C++
+cppreference.com C
+React Docs
+Python Docs
+TypeScript Docs
+Java SE Tutorials
+Anthropic Docs
+OpenAI Docs
+Google Gemini Docs
+ComfyUI Repo
+Stability AI Docs (SD/SDXL)
+Kali Linux Docs
+MDN Web Dev Guide
+DigitalOcean Hosting Docs
+HubSpot API Docs
+MDN Networking Guide
+LangChain Docs
+Refactoring Guru Design Patterns
+GIMP Docs
+DTF Printing Guide
+The Odin Project
+Eloquent JavaScript Book
+Free Programming Books Repo
+Wikipedia - Raster Graphics
+Wikipedia - Halftone
+Kali Linux Tools List
+Ghidra Book
+Radare2 Book
+Wireshark User's Guide
+Reverse Engineering for Beginners Book
+Flutter Official Docs
+React Native Docs
+SwiftUI Apple Developer Docs
+Jetpack Compose Android Docs
+Svelte Documentation
+Astro Documentation
+NestJS Documentation
+tRPC Documentation
+Docker Official Docs
+Kubernetes Documentation
+Terraform HashiCorp Docs
+GitHub Actions Docs
+Prometheus Documentation
+Grafana Documentation
+PostgreSQL Documentation
+Redis Documentation
+Ollama Documentation
+llama.cpp Documentation
+vLLM Documentation
+Text Generation Web UI
+LocalAI Documentation
+Meta Llama Documentation
+Mistral AI Documentation
+PyTorch Documentation
+Hugging Face Transformers
+Hugging Face Hub Docs
+TensorFlow Documentation
+ChromaDB Documentation
+Pinecone Documentation
+Weaviate Documentation
+Qdrant Documentation
+FAISS Documentation
+LangGraph Documentation
+CrewAI Documentation
+AutoGen Microsoft
+LangFlow Documentation
+Flowise Documentation
+AUTOMATIC1111 Stable Diffusion
+Fooocus Documentation
+InvokeAI Documentation
+ControlNet Documentation
+Dive into Deep Learning
+Fast.ai Practical Deep Learning
+Prompt Engineering Guide
+Gradio Documentation
+OpenCV Documentation
+DTF Research 2025
+Whisper OpenAI
+Coqui TTS
+Bark Audio Generation
+ElevenLabs API Documentation
+SpeechBrain
+YOLO Ultralytics
+Segment Anything Model SAM
+MediaPipe Google
+Roboflow Documentation
+IP-Adapter
+Next.js 16 Documentation
+React 19 Documentation
+TypeScript Handbook
+Radix UI Documentation
+Tailwind CSS Documentation
+Zustand State Management
+TanStack Query Documentation
+React Hook Form
+Zod Validation
+Lucide React Icons
+ws WebSocket Library
+Tus.js Resumable Uploads
+Flutter Documentation
+Dart Language Tour
+Riverpod State Management
+GoRouter Flutter Navigation
+FastAPI Documentation
+Pydantic Documentation
+Pillow Image Processing
+OpenCV Python
+scikit-image
+rembg Background Removal
+ONNX Runtime
+OpenAI Python SDK
+Gradio
+Numba JIT Compiler
+SQLAlchemy ORM
+Alembic Database Migrations
+PyJWT
+bcrypt Password Hashing
+PyOTP 2FA
+cryptography Fernet
+Loguru Logging
+structlog Structured Logging
+Prometheus Python Client
+Docker Documentation
+Docker Compose
+ROCm AMD GPU
+ESLint
+Black Python Formatter
+mypy Type Checker
+OpenAPI TypeScript Generator
+UI/UX Design for Developers
+shadcn/ui Components
+Packaging Python Apps
+Electron App Packaging
+Tauri App Framework
+PyOxidizer Python Compilation
+Nuitka Python Compiler
+Background Removal Techniques
+Modern Web Design Patterns
+Software Architecture Patterns
+Linux Packaging Guide
+Uvicorn ASGI Server
+NumPy Scientific Computing
+Awesome Python
+Awesome React
+Web Security OWASP

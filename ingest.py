@@ -44,13 +44,21 @@ class IngestionPipeline:
         if not os.path.exists(TARGETS_FILE):
             logging.error(f"Targets file not found: {TARGETS_FILE}")
             return {}
-        
+
         with open(TARGETS_FILE, 'r') as f:
             targets = json.load(f)
-        
+
         # Create a map from destination directory to target info
         targets_map = {}
         for target in targets:
+            # Auto-generate destination if not provided (for Wave 1 format)
+            if 'destination' not in target:
+                safe_name = target['name'].lower().replace(' ', '_').replace('.', '_')
+                if target['type'] == 'git':
+                    target['destination'] = f"repos/{safe_name}"
+                else:
+                    target['destination'] = f"scraped/{safe_name}"
+
             # Use the first part of the destination path as the key
             key = target['destination'].split('/')[1]
             targets_map[key] = {

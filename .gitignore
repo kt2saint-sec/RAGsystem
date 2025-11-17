@@ -75,3 +75,59 @@ data/scraped/
 
 # Test/experimental directories
 gimp/
+
+# DTF Business & Research (confidential)
+dtf_*
+*dtf*.md
+*dtf*.json
+*DTF*
+ORACLE_CLOUD_SETUP_GUIDE.md
+dtf_facility_safety_research.md
+dtf_business_operations_research.md
+
+# Business research & expansion files
+EXPANSION_*.md
+EXPANSION_*.md
+*RESEARCH*.md
+*_SUMMARY.md
+batch[0-9]*_sources*.txt
+batch[0-9]*_sources*.json
+*_acquisition.log
+targets_*.json
+*_sources*.json
+*_sources*.txt
+acquisition.pid
+sources_sorted_by_size.txt
+new_sources*.txt
+comfyui_sources.txt
+design_ui_sources_sorted.txt
+tanstack_stripe_sources.txt
+orlando_legal_business_sources.json
+saas_legal_fundraising_sources.json
+research_testing_servicemesh_sources_2025.json
+research_documentation_sources_2024.json
+ANTHROPIC_CLAUDE_RESEARCH_SUMMARY.md
+BATCH*_COMPLETION_SUMMARY.md
+FINAL_*.md
+TESTING_SERVICEMESH_RESEARCH_SUMMARY.md
+QUICK_START_TESTING_SERVICEMESH.md
+
+# Build/deployment scripts (local use only)
+ingest*.sh
+run_*.sh
+auto_split_*.sh
+automated_monitoring.py
+batch_merger.py
+parallel_ingest*.sh
+resume_ingestion.sh
+monitor_ingestion.sh
+*ingestion.log
+parallel_resume*.log
+
+# Generated tracking files
+targets.backup_*
+tunableop_results*.csv
+
+# Web UI/API (local development only)
+api/
+dashboard/

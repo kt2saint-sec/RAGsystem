@@ -1033,5 +1033,2257 @@
     "url": "https://github.com/OWASP/CheatSheetSeries.git",
     "destination": "repos/owasp_cheatsheets",
     "description": "OWASP security cheat sheets for JWT, authentication, XSS, SQL injection prevention"
+  },
+  {
+    "name": "ComfyUI Official Examples",
+    "type": "git",
+    "url": "https://github.com/comfyanonymous/ComfyUI_examples",
+    "destination": "repos/comfyui_examples",
+    "description": "Official ComfyUI workflow examples with 30+ techniques (img2img, inpainting, ControlNet, SDXL, video, 3D)"
+  },
+  {
+    "name": "ComfyUI Official Docs",
+    "type": "web_scrape",
+    "url": "https://docs.comfy.org/",
+    "destination": "scraped/comfyui_docs",
+    "description": "Official ComfyUI documentation with node references and tutorials"
+  },
+  {
+    "name": "ComfyUI Wiki Workflows",
+    "type": "web_scrape",
+    "url": "https://comfyui-wiki.com/en/workflows",
+    "destination": "scraped/comfyui_wiki_workflows",
+    "description": "Community-driven wiki with workflow examples and custom node listings"
+  },
+  {
+    "name": "Stable Diffusion Prompt Guide",
+    "type": "web_scrape",
+    "url": "https://stable-diffusion-art.com/prompt-guide/",
+    "destination": "scraped/sd_prompt_guide",
+    "description": "Definitive prompt engineering guide covering anatomy, keyword weighting, blending, and negative prompts"
+  },
+  {
+    "name": "ZHO ComfyUI Workflows",
+    "type": "git",
+    "url": "https://github.com/ZHO-ZHO-ZHO/ComfyUI-Workflows-ZHO",
+    "destination": "repos/comfyui_workflows_zho",
+    "description": "Large Chinese/English workflow collection with diverse real-world examples (6,967 stars)"
+  },
+  {
+    "name": "Cubiq ComfyUI Workflows",
+    "type": "git",
+    "url": "https://github.com/cubiq/ComfyUI_Workflows",
+    "destination": "repos/comfyui_workflows_cubiq",
+    "description": "Well-documented, easy-to-follow workflows with detailed explanations"
+  },
+  {
+    "name": "Yolain ComfyUI Workflows",
+    "type": "git",
+    "url": "https://github.com/yolain/ComfyUI-Yolain-Workflows",
+    "destination": "repos/comfyui_workflows_yolain",
+    "description": "Built using comfyui-easy-use node package with beginner-friendly practical examples"
+  },
+  {
+    "name": "Wyrde ComfyUI Workflows",
+    "type": "git",
+    "url": "https://github.com/wyrde/wyrde-comfyui-workflows",
+    "destination": "repos/comfyui_workflows_wyrde",
+    "description": "Advanced workflows with Python utilities for specialized techniques"
+  },
+  {
+    "name": "PromptHero Prompt Guide",
+    "type": "web_scrape",
+    "url": "https://prompthero.com/stable-diffusion-prompt-guide",
+    "destination": "scraped/prompthero_guide",
+    "description": "Beginner-friendly prompt guide with real examples from Midjourney, DALL-E, and Stable Diffusion"
+  },
+  {
+    "name": "Stable Diffusion Models Guide",
+    "type": "web_scrape",
+    "url": "https://stable-diffusion-art.com/models/",
+    "destination": "scraped/sd_models_guide",
+    "description": "Model selection guidance with comparisons, recommendations, and best practices"
+  },
+  {
+    "name": "Best Stable Diffusion Models 2025",
+    "type": "web_scrape",
+    "url": "https://www.aiarty.com/stable-diffusion-guide/best-stable-diffusion-models.htm",
+    "destination": "scraped/best_sd_models_2025",
+    "description": "Curated list of 40+ best models for different use cases with settings recommendations"
+  },
+  {
+    "name": "Stability AI SD 3.5 Prompt Guide",
+    "type": "web_scrape",
+    "url": "https://stability.ai/learning-hub/stable-diffusion-3-5-prompt-guide",
+    "destination": "scraped/stability_sd35_guide",
+    "description": "Official guidance for latest Stable Diffusion 3.5 model with prompt refinement tips"
+  },
+  {
+    "name": "ComfyUI Manager",
+    "type": "git",
+    "url": "https://github.com/Comfy-Org/ComfyUI-Manager",
+    "destination": "repos/comfyui_manager",
+    "description": "Essential extension for installing/managing custom nodes with package manager and node catalog"
+  },
+  {
+    "name": "ComfyUI Wiki Custom Nodes",
+    "type": "web_scrape",
+    "url": "https://comfyui-wiki.com/en/resource/custom-nodes",
+    "destination": "scraped/comfyui_wiki_nodes",
+    "description": "Curated list of recommended custom node plugins for ComfyUI"
+  },
+  {
+    "name": "Google AI Studio (Gemini API)",
+    "type": "web_scrape",
+    "url": "https://ai.google.dev/",
+    "description": "Official Google AI developer platform with Gemini 2.0 Flash, 2.5 Pro APIs, and vibe coding features"
+  },
+  {
+    "name": "Google AI Studio - Interactive Playground",
+    "type": "web_scrape",
+    "url": "https://aistudio.google.com/",
+    "description": "Unified playground for testing Gemini models, Veo 3.1 video generation, and GenMedia tools"
+  },
+  {
+    "name": "Gemini API Documentation",
+    "type": "web_scrape",
+    "url": "https://ai.google.dev/gemini-api/docs",
+    "description": "Complete documentation for Gemini API including multimodal inputs and function calling"
+  },
+  {
+    "name": "Gemini API Examples (Official GitHub)",
+    "type": "git",
+    "url": "https://github.com/google-gemini/api-examples",
+    "description": "Official example code for Gemini API across multiple programming languages"
+  },
+  {
+    "name": "Gemini Cookbook (Official GitHub)",
+    "type": "git",
+    "url": "https://github.com/google-gemini/cookbook",
+    "description": "Examples and guides for using the Gemini API with tutorials and recipes"
+  },
+  {
+    "name": "Google Generative AI Python SDK",
+    "type": "git",
+    "url": "https://github.com/google-gemini/generative-ai-python",
+    "description": "Official Python SDK for Google's Gemini API"
+  },
+  {
+    "name": "Google Cloud Vertex AI Samples",
+    "type": "git",
+    "url": "https://github.com/GoogleCloudPlatform/generative-ai",
+    "description": "Sample code for Vertex AI including Gemini, Imagen, Veo, and custom model training"
+  },
+  {
+    "name": "NotebookLM",
+    "type": "web_scrape",
+    "url": "https://notebooklm.google.com/",
+    "description": "Free AI research assistant with Deep Research, Audio Overviews, and document analysis"
+  },
+  {
+    "name": "NotebookLM Help Documentation",
+    "type": "web_scrape",
+    "url": "https://support.google.com/notebooklm/",
+    "description": "Official help center for NotebookLM with tutorials and feature documentation"
+  },
+  {
+    "name": "Vertex AI Platform Documentation",
+    "type": "web_scrape",
+    "url": "https://cloud.google.com/vertex-ai/docs",
+    "description": "Enterprise AI platform documentation covering Gemini, Imagen, Veo, and MLOps"
+  },
+  {
+    "name": "Vertex AI Generative AI Documentation",
+    "type": "web_scrape",
+    "url": "https://cloud.google.com/vertex-ai/generative-ai/docs",
+    "description": "Generative AI documentation including prompt design and model tuning"
+  },
+  {
+    "name": "Imagen 4 (Image Generation)",
+    "type": "web_scrape",
+    "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/image/overview",
+    "description": "Google's latest text-to-image model with inpainting and outpainting support"
+  },
+  {
+    "name": "Veo 3 / Veo 3.1 Video Generation",
+    "type": "web_scrape",
+    "url": "https://deepmind.google/technologies/veo/",
+    "description": "Text-to-video and image-to-video generation model with synchronized audio"
+  },
+  {
+    "name": "Google Flow (Veo Platform)",
+    "type": "web_scrape",
+    "url": "https://labs.google.com/flow",
+    "description": "AI filmmaking platform powered by Veo 3.1 with storyboard-to-video generation"
+  },
+  {
+    "name": "Gemini Code Assist Documentation",
+    "type": "web_scrape",
+    "url": "https://cloud.google.com/products/gemini/code-assist",
+    "description": "AI-powered coding assistant with Agent Mode for VS Code and IDEs"
+  },
+  {
+    "name": "Gemma Open Models",
+    "type": "web_scrape",
+    "url": "https://ai.google.dev/gemma",
+    "description": "Open-source models built from Gemini research including Gemma 2 and Gemma 3"
+  },
+  {
+    "name": "Gemma Models on GitHub",
+    "type": "git",
+    "url": "https://github.com/google-deepmind/gemma",
+    "description": "Official repository for Gemma lightweight open-source models"
+  },
+  {
+    "name": "Google AI Edge (On-Device AI)",
+    "type": "web_scrape",
+    "url": "https://ai.google.dev/edge",
+    "description": "Tools for deploying AI models on mobile, web, and embedded devices"
+  },
+  {
+    "name": "Gemini CLI (Command Line Interface)",
+    "type": "git",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "description": "Open-source AI agent bringing Gemini to the terminal with coding assistance"
+  },
+  {
+    "name": "File Search Tool (RAG System)",
+    "type": "web_scrape",
+    "url": "https://ai.google.dev/gemini-api/docs/file-search",
+    "description": "Fully managed Retrieval Augmented Generation system in Gemini API"
+  },
+  {
+    "name": "Vertex AI Model Garden",
+    "type": "web_scrape",
+    "url": "https://cloud.google.com/vertex-ai/docs/start/explore-models",
+    "description": "Unified platform with 200+ foundation models including Gemini, Imagen, and Veo"
+  },
+  {
+    "name": "Google Cloud Speech-to-Text API",
+    "type": "web_scrape",
+    "url": "https://cloud.google.com/speech-to-text/docs",
+    "description": "Neural network speech recognition supporting 125+ languages"
+  },
+  {
+    "name": "Responsible AI Toolkit",
+    "type": "web_scrape",
+    "url": "https://ai.google.dev/responsible",
+    "description": "Tools and guidance for responsible AI design and evaluation"
+  },
+  {
+    "name": "Anthropic Documentation Portal",
+    "type": "web_scrape",
+    "url": "https://docs.anthropic.com/",
+    "description": "Official Anthropic API documentation for Claude models with comprehensive guides"
+  },
+  {
+    "name": "Claude Docs - Developer Resources",
+    "type": "web_scrape",
+    "url": "https://docs.claude.com/",
+    "description": "Consumer and developer documentation covering Claude Code, MCP, and Agent Skills"
+  },
+  {
+    "name": "Claude Code Documentation",
+    "type": "web_scrape",
+    "url": "https://code.claude.com/docs/en/claude_code_docs_map.md",
+    "description": "Complete documentation for Claude Code CLI tool and advanced features"
+  },
+  {
+    "name": "Anthropic Prompt Engineering Guide",
+    "type": "git",
+    "url": "https://github.com/anthropics/prompt-eng-tutorial",
+    "description": "Official prompt engineering tutorial with best practices and examples (26.3k\u2b50)"
+  },
+  {
+    "name": "Claude Cookbooks",
+    "type": "git",
+    "url": "https://github.com/anthropics/claude-cookbooks",
+    "description": "Collection of practical recipes and examples for using Claude API (27.8k\u2b50)"
+  },
+  {
+    "name": "Claude Code Repository",
+    "type": "git",
+    "url": "https://github.com/anthropics/claude-code",
+    "description": "Official Claude Code CLI tool repository (42.6k\u2b50)"
+  },
+  {
+    "name": "Anthropic Quickstarts",
+    "type": "git",
+    "url": "https://github.com/anthropics/quickstarts",
+    "description": "Quick start examples for integrating Claude into applications (10.3k\u2b50)"
+  },
+  {
+    "name": "Anthropic Courses",
+    "type": "git",
+    "url": "https://github.com/anthropics/courses",
+    "description": "Educational course materials for learning Claude and AI development (17.6k\u2b50)"
+  },
+  {
+    "name": "Claude Agent Skills",
+    "type": "git",
+    "url": "https://github.com/anthropics/skills",
+    "description": "Examples and documentation for building custom Claude Agent Skills (17.3k\u2b50)"
+  },
+  {
+    "name": "Anthropic Python SDK",
+    "type": "git",
+    "url": "https://github.com/anthropics/anthropic-sdk-python",
+    "description": "Official Python SDK for Anthropic Claude API with full feature support"
+  },
+  {
+    "name": "Anthropic TypeScript SDK",
+    "type": "git",
+    "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+    "description": "Official TypeScript/Node.js SDK for Anthropic Claude API"
+  },
+  {
+    "name": "Anthropic Go SDK",
+    "type": "git",
+    "url": "https://github.com/anthropics/anthropic-sdk-go",
+    "description": "Official Go SDK for Anthropic Claude API"
+  },
+  {
+    "name": "Claude MCP Protocol Documentation",
+    "type": "web_scrape",
+    "url": "https://modelcontextprotocol.io/",
+    "description": "Model Context Protocol specification for tool integration with Claude"
+  },
+  {
+    "name": "Extended Context for Claude",
+    "type": "web_scrape",
+    "url": "https://docs.anthropic.com/en/docs/about/models",
+    "description": "Documentation for Claude's extended context windows (200K-1M tokens) with best practices"
+  },
+  {
+    "name": "Claude Vision & Multimodal",
+    "type": "web_scrape",
+    "url": "https://docs.anthropic.com/en/docs/vision",
+    "description": "Guide to Claude's vision capabilities with image understanding and analysis"
+  },
+  {
+    "name": "Anthropic Evals Framework",
+    "type": "git",
+    "url": "https://github.com/anthropics/evals",
+    "description": "Framework for evaluating Claude model performance and safety"
+  },
+  {
+    "name": "Claude GitHub Actions",
+    "type": "git",
+    "url": "https://github.com/anthropics/github-actions",
+    "description": "GitHub Actions for integrating Claude into CI/CD workflows"
+  },
+  {
+    "name": "Anthropic Demos",
+    "type": "git",
+    "url": "https://github.com/anthropics/demos",
+    "description": "Demonstration applications using Claude API"
+  },
+  {
+    "name": "Security Review Tool",
+    "type": "git",
+    "url": "https://github.com/anthropics/security-review",
+    "description": "Tools for security analysis and review with Claude"
+  },
+  {
+    "name": "n8n Documentation - Main Portal",
+    "type": "web_scrape",
+    "url": "https://docs.n8n.io/",
+    "description": "Official n8n documentation covering workflow automation, node reference, expressions, and best practices"
+  },
+  {
+    "name": "n8n Telegram Node Documentation",
+    "type": "web_scrape",
+    "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/",
+    "description": "Complete Telegram node documentation with chat operations, message handling, and media support"
+  },
+  {
+    "name": "n8n Telegram Trigger Node Documentation",
+    "type": "web_scrape",
+    "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.telegramtrigger/",
+    "description": "Telegram Trigger node documentation covering all event types and filtering options"
+  },
+  {
+    "name": "n8n Telegram Credentials Setup",
+    "type": "web_scrape",
+    "url": "https://docs.n8n.io/integrations/builtin/credentials/telegram/",
+    "description": "Step-by-step guide for setting up Telegram bot credentials with BotFather"
+  },
+  {
+    "name": "n8n Telegram Integration Templates",
+    "type": "web_scrape",
+    "url": "https://n8n.io/integrations/telegram/",
+    "description": "Official collection of Telegram workflow templates and integration patterns"
+  },
+  {
+    "name": "n8n Telegram Trigger Integration Templates",
+    "type": "web_scrape",
+    "url": "https://n8n.io/integrations/telegram-trigger/",
+    "description": "Community-curated Telegram trigger workflows for event-driven automation"
+  },
+  {
+    "name": "n8n Workflow Templates Library",
+    "type": "web_scrape",
+    "url": "https://n8n.io/workflows/",
+    "description": "6,823+ community workflow templates searchable by use case and app"
+  },
+  {
+    "name": "Telegram Bot Starter Template - AI Agent Chatbot",
+    "type": "web_scrape",
+    "url": "https://n8n.io/workflows/2402-telegram-bot-starter-template-setup-and-ai-agent-chatbot/",
+    "description": "Complete Telegram bot starter with AI agent integration and Google Sheets"
+  },
+  {
+    "name": "Telegram AI Chatbot Workflow",
+    "type": "web_scrape",
+    "url": "https://n8n.io/workflows/1934-telegram-ai-chatbot/",
+    "description": "AI-powered Telegram chatbot with intelligent message processing"
+  },
+  {
+    "name": "Telegram Messaging Agent - Multi-Media",
+    "type": "web_scrape",
+    "url": "https://n8n.io/workflows/2751-telegram-messaging-agent-for-textaudioimages/",
+    "description": "Advanced Telegram bot handling text, audio, and image messages with AI processing"
+  },
+  {
+    "name": "n8n Project Management - Telegram & Google Sheets",
+    "type": "git",
+    "url": "https://github.com/datadrivenconstruction/Project-management-n8n-with-task-management-and-photo-reports",
+    "description": "Production-ready workflow for project management using Telegram bot and Google Sheets"
+  },
+  {
+    "name": "Awesome n8n Templates Collection",
+    "type": "git",
+    "url": "https://github.com/enescingoz/awesome-n8n-templates",
+    "description": "Curated 100+ n8n templates including Telegram, Gmail, Google Drive integrations (15.7k\u2b50)"
+  },
+  {
+    "name": "Telegram Support Ticket Management Workflow",
+    "type": "git",
+    "url": "https://github.com/Automations-Project/n8n-advanced-telegram-support-ticket-management-workflow",
+    "description": "Enterprise-grade customer support automation using Telegram"
+  },
+  {
+    "name": "Telegram Bot - Voice Transcription & Reminders",
+    "type": "git",
+    "url": "https://github.com/nithiyasree-git/telegram-bot-n8n-workflow",
+    "description": "Smart assistant with voice message transcription and reminder creation"
+  },
+  {
+    "name": "GitHub + Telegram Integration Workflows",
+    "type": "web_scrape",
+    "url": "https://n8n.io/integrations/github/and/telegram/",
+    "description": "Automated workflows connecting GitHub with Telegram for notifications and issue tracking"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Express.js Docs",
+    "url": "https://expressjs.com/",
+    "description": "Official Express.js documentation"
+  },
+  {
+    "type": "git",
+    "name": "Express.js Framework",
+    "url": "https://github.com/expressjs/express.git",
+    "description": "Express.js framework repository"
+  },
+  {
+    "type": "git",
+    "name": "Helmet.js Security",
+    "url": "https://github.com/helmetjs/helmet.git",
+    "description": "Express security middleware"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Passport.js Docs",
+    "url": "https://www.passportjs.org/",
+    "description": "Authentication middleware for Node.js"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Django Docs",
+    "url": "https://docs.djangoproject.com/en/stable/",
+    "description": "Official Django documentation"
+  },
+  {
+    "type": "git",
+    "name": "Django Framework",
+    "url": "https://github.com/django/django.git",
+    "description": "Django web framework repository"
+  },
+  {
+    "type": "git",
+    "name": "Django REST Framework",
+    "url": "https://github.com/encode/django-rest-framework.git",
+    "description": "Django REST Framework repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Django REST Framework Docs",
+    "url": "https://www.django-rest-framework.org/",
+    "description": "Official DRF documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "MongoDB Docs",
+    "url": "https://www.mongodb.com/docs/",
+    "description": "Official MongoDB documentation"
+  },
+  {
+    "type": "git",
+    "name": "MongoDB Server",
+    "url": "https://github.com/mongodb/mongo.git",
+    "description": "MongoDB database server repository"
+  },
+  {
+    "type": "git",
+    "name": "Mongoose ODM",
+    "url": "https://github.com/Automattic/mongoose.git",
+    "description": "MongoDB object modeling for Node.js"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Mongoose Docs",
+    "url": "https://mongoosejs.com/docs/",
+    "description": "Official Mongoose ODM documentation"
+  },
+  {
+    "type": "git",
+    "name": "MongoDB Node.js Driver",
+    "url": "https://github.com/mongodb/node-mongodb-native.git",
+    "description": "Official MongoDB Node.js driver"
+  },
+  {
+    "type": "web_scrape",
+    "name": "PyMongo Docs",
+    "url": "https://pymongo.readthedocs.io/en/stable/",
+    "description": "PyMongo Python driver documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Motor Docs",
+    "url": "https://motor.readthedocs.io/en/stable/",
+    "description": "Async Python MongoDB driver documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "GraphQL Docs",
+    "url": "https://graphql.org/learn/",
+    "description": "Official GraphQL documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "GraphQL Spec",
+    "url": "https://spec.graphql.org/",
+    "description": "GraphQL specification document"
+  },
+  {
+    "type": "git",
+    "name": "GraphQL.js",
+    "url": "https://github.com/graphql/graphql-js.git",
+    "description": "GraphQL JavaScript reference implementation"
+  },
+  {
+    "type": "git",
+    "name": "Apollo Client",
+    "url": "https://github.com/apollographql/apollo-client.git",
+    "description": "Apollo GraphQL client repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Apollo Client Docs",
+    "url": "https://www.apollographql.com/docs/react/",
+    "description": "Official Apollo Client documentation"
+  },
+  {
+    "type": "git",
+    "name": "Apollo Server",
+    "url": "https://github.com/apollographql/apollo-server.git",
+    "description": "Apollo GraphQL server repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Apollo Server Docs",
+    "url": "https://www.apollographql.com/docs/apollo-server/",
+    "description": "Official Apollo Server documentation"
+  },
+  {
+    "type": "git",
+    "name": "GraphQL Yoga",
+    "url": "https://github.com/graphql-hive/graphql-yoga.git",
+    "description": "Fully-featured GraphQL server"
+  },
+  {
+    "type": "git",
+    "name": "GraphiQL IDE",
+    "url": "https://github.com/graphql/graphiql.git",
+    "description": "GraphQL IDE and LSP tools"
+  },
+  {
+    "type": "git",
+    "name": "Hasura GraphQL Engine",
+    "url": "https://github.com/hasura/graphql-engine.git",
+    "description": "Instant GraphQL APIs on databases"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Jest Docs",
+    "url": "https://jestjs.io/docs/getting-started",
+    "description": "Jest JavaScript testing framework documentation"
+  },
+  {
+    "type": "git",
+    "name": "Jest Framework",
+    "url": "https://github.com/jestjs/jest.git",
+    "description": "Delightful JavaScript Testing Framework"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Jest API Reference",
+    "url": "https://jestjs.io/docs/api",
+    "description": "Jest API reference and configuration"
+  },
+  {
+    "type": "web_scrape",
+    "name": "pytest Docs",
+    "url": "https://docs.pytest.org/en/stable/",
+    "description": "pytest Python testing framework documentation"
+  },
+  {
+    "type": "git",
+    "name": "pytest Framework",
+    "url": "https://github.com/pytest-dev/pytest.git",
+    "description": "The pytest testing framework"
+  },
+  {
+    "type": "web_scrape",
+    "name": "pytest Fixtures Guide",
+    "url": "https://docs.pytest.org/en/stable/how-to/fixtures.html",
+    "description": "pytest fixtures and mocking guide"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Istio Documentation",
+    "url": "https://istio.io/latest/docs/",
+    "description": "Istio service mesh documentation"
+  },
+  {
+    "type": "git",
+    "name": "Istio Project",
+    "url": "https://github.com/istio/istio.git",
+    "description": "Istio service mesh repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Istio Traffic Management",
+    "url": "https://istio.io/latest/docs/concepts/traffic-management/",
+    "description": "Istio traffic management configuration"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Istio Security",
+    "url": "https://istio.io/latest/docs/concepts/security/",
+    "description": "Istio security and mTLS features"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Envoy Documentation",
+    "url": "https://www.envoyproxy.io/docs/envoy/latest/",
+    "description": "Envoy proxy documentation"
+  },
+  {
+    "type": "git",
+    "name": "Envoy Project",
+    "url": "https://github.com/envoyproxy/envoy.git",
+    "description": "Envoy proxy repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Envoy Configuration Reference",
+    "url": "https://www.envoyproxy.io/docs/envoy/latest/configuration/configuration.html",
+    "description": "Envoy configuration reference"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Envoy as API Gateway",
+    "url": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http_connection_management.html",
+    "description": "Envoy as API gateway guide"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Redis Streams Documentation",
+    "url": "https://redis.io/docs/data-types/streams/",
+    "description": "Redis Streams data structure documentation"
+  },
+  {
+    "type": "git",
+    "name": "Redis Server",
+    "url": "https://github.com/redis/redis.git",
+    "description": "Redis server repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Redis Streams Tutorial",
+    "url": "https://redis.io/docs/data-types/streams-tutorial/",
+    "description": "Redis Streams tutorial and examples"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Redis Pub/Sub",
+    "url": "https://redis.io/docs/interact/pubsub/",
+    "description": "Redis Pub/Sub messaging"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Redis Consumer Groups",
+    "url": "https://redis.io/docs/data-types/streams-tutorial/#consumer-groups",
+    "description": "Redis Streams consumer groups guide"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Vue.js 3 Docs",
+    "url": "https://vuejs.org/",
+    "description": "Official Vue.js 3 documentation"
+  },
+  {
+    "type": "git",
+    "name": "Vue.js Framework",
+    "url": "https://github.com/vuejs/core.git",
+    "description": "Vue.js core framework repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Sentry Documentation",
+    "url": "https://docs.sentry.io/",
+    "description": "Sentry error tracking documentation"
+  },
+  {
+    "type": "git",
+    "name": "Sentry Platform",
+    "url": "https://github.com/getsentry/sentry.git",
+    "description": "Sentry error tracking platform"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Rollbar Documentation",
+    "url": "https://docs.rollbar.com/",
+    "description": "Rollbar error tracking documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Datadog Documentation",
+    "url": "https://docs.datadoghq.com/",
+    "description": "Datadog monitoring platform documentation"
+  },
+  {
+    "type": "git",
+    "name": "Datadog Agent",
+    "url": "https://github.com/DataDog/datadog-agent.git",
+    "description": "Datadog agent repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "New Relic Documentation",
+    "url": "https://docs.newrelic.com/",
+    "description": "New Relic APM documentation"
+  },
+  {
+    "type": "git",
+    "name": "New Relic Python Agent",
+    "url": "https://github.com/newrelic/newrelic-python-agent.git",
+    "description": "New Relic Python agent repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Elasticsearch Documentation",
+    "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/",
+    "description": "Elasticsearch search engine documentation"
+  },
+  {
+    "type": "git",
+    "name": "Elasticsearch",
+    "url": "https://github.com/elastic/elasticsearch.git",
+    "description": "Elasticsearch repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Logstash Documentation",
+    "url": "https://www.elastic.co/guide/en/logstash/current/",
+    "description": "Logstash data processing documentation"
+  },
+  {
+    "type": "git",
+    "name": "Logstash",
+    "url": "https://github.com/elastic/logstash.git",
+    "description": "Logstash repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Kibana Documentation",
+    "url": "https://www.elastic.co/guide/en/kibana/current/",
+    "description": "Kibana data visualization documentation"
+  },
+  {
+    "type": "git",
+    "name": "Kibana",
+    "url": "https://github.com/elastic/kibana.git",
+    "description": "Kibana repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Grafana Loki Documentation",
+    "url": "https://grafana.com/docs/loki/latest/",
+    "description": "Grafana Loki log aggregation documentation"
+  },
+  {
+    "type": "git",
+    "name": "Grafana Loki",
+    "url": "https://github.com/grafana/loki.git",
+    "description": "Grafana Loki repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Papertrail Help",
+    "url": "https://www.papertrail.com/help/",
+    "description": "Papertrail log management help documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Logz.io Documentation",
+    "url": "https://docs.logz.io/",
+    "description": "Logz.io ELK-as-a-Service documentation"
+  },
+  {
+    "type": "git",
+    "name": "Logz.io Tools",
+    "url": "https://github.com/logzio",
+    "description": "Logz.io integration tools"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Pingdom Documentation",
+    "url": "https://help.pingdom.com/",
+    "description": "Pingdom uptime monitoring documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Better Uptime Documentation",
+    "url": "https://betterstack.com/docs/uptime/",
+    "description": "Better Uptime monitoring documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Statuspage.io Documentation",
+    "url": "https://support.atlassian.com/statuspage/",
+    "description": "Statuspage.io status page documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Postman Documentation",
+    "url": "https://learning.postman.com/docs/",
+    "description": "Postman API testing documentation"
+  },
+  {
+    "type": "git",
+    "name": "Postman Tools",
+    "url": "https://github.com/postmanlabs",
+    "description": "Postman labs tools"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Insomnia Documentation",
+    "url": "https://docs.insomnia.rest/",
+    "description": "Insomnia REST client documentation"
+  },
+  {
+    "type": "git",
+    "name": "Insomnia",
+    "url": "https://github.com/Kong/insomnia.git",
+    "description": "Insomnia API client repository"
+  },
+  {
+    "type": "web_scrape",
+    "name": "k6 Documentation",
+    "url": "https://grafana.com/docs/k6/latest/",
+    "description": "k6 load testing documentation"
+  },
+  {
+    "type": "git",
+    "name": "k6 Load Testing",
+    "url": "https://github.com/grafana/k6.git",
+    "description": "k6 load testing tool"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Snyk Documentation",
+    "url": "https://docs.snyk.io/",
+    "description": "Snyk vulnerability scanning documentation"
+  },
+  {
+    "type": "git",
+    "name": "Snyk Security",
+    "url": "https://github.com/snyk",
+    "description": "Snyk security tools"
+  },
+  {
+    "type": "web_scrape",
+    "name": "OWASP ZAP Documentation",
+    "url": "https://www.zaproxy.org/docs/",
+    "description": "OWASP ZAP security testing documentation"
+  },
+  {
+    "type": "git",
+    "name": "OWASP ZAP",
+    "url": "https://github.com/zaproxy/zaproxy.git",
+    "description": "OWASP ZAP security tool"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Trivy Documentation",
+    "url": "https://aquasecurity.github.io/trivy/",
+    "description": "Trivy container scanning documentation"
+  },
+  {
+    "type": "git",
+    "name": "Trivy Scanner",
+    "url": "https://github.com/aquasecurity/trivy.git",
+    "description": "Trivy vulnerability scanner"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Certbot Documentation",
+    "url": "https://eff-certbot.readthedocs.io/en/latest/",
+    "description": "Certbot SSL certificate automation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "LaunchDarkly Documentation",
+    "url": "https://docs.launchdarkly.com/",
+    "description": "LaunchDarkly feature flags documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Unleash Documentation",
+    "url": "https://docs.getunleash.io/",
+    "description": "Unleash open-source feature flags"
+  },
+  {
+    "type": "git",
+    "name": "Unleash",
+    "url": "https://github.com/Unleash/unleash.git",
+    "description": "Unleash feature flag platform"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Mixpanel Documentation",
+    "url": "https://docs.mixpanel.com/",
+    "description": "Mixpanel product analytics documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Segment Documentation",
+    "url": "https://segment.com/docs/",
+    "description": "Segment customer data platform"
+  },
+  {
+    "type": "git",
+    "name": "Segment Tools",
+    "url": "https://github.com/segmentio",
+    "description": "Segment libraries and tools"
+  },
+  {
+    "type": "web_scrape",
+    "name": "PagerDuty Documentation",
+    "url": "https://support.pagerduty.com/",
+    "description": "PagerDuty incident management documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Opsgenie Documentation",
+    "url": "https://docs.opsgenie.com/",
+    "description": "Opsgenie alert management documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Veeam Documentation",
+    "url": "https://www.veeam.com/documentation-guides-datasheets.html",
+    "description": "Veeam backup and recovery documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "AWS Backup Documentation",
+    "url": "https://docs.aws.amazon.com/aws-backup/",
+    "description": "AWS Backup service documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Libraries Portal",
+    "url": "https://tanstack.com/libraries",
+    "description": "Complete overview of all TanStack libraries"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Homepage",
+    "url": "https://tanstack.com/",
+    "description": "TanStack main landing page and ecosystem overview"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Start React Docs",
+    "url": "https://tanstack.com/start/latest/docs/framework/react/overview",
+    "description": "TanStack Start full-stack framework documentation"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Router Repository",
+    "url": "https://github.com/TanStack/router.git",
+    "description": "TanStack Router and Start source code"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Router React Docs",
+    "url": "https://tanstack.com/router/latest/docs/framework/react/overview",
+    "description": "Type-safe React routing documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Router Solid Docs",
+    "url": "https://tanstack.com/router/latest/docs/framework/solid/overview",
+    "description": "TanStack Router for Solid.js"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Query React Docs",
+    "url": "https://tanstack.com/query/latest/docs/framework/react/overview",
+    "description": "Powerful async state management for React"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Query Vue Docs",
+    "url": "https://tanstack.com/query/v4/docs/framework/vue",
+    "description": "TanStack Query for Vue.js"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Query Angular Docs",
+    "url": "https://tanstack.com/query/v5/docs/framework/angular/devtools",
+    "description": "TanStack Query for Angular"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Query Svelte Docs",
+    "url": "https://tanstack.com/query/latest/docs/framework/svelte",
+    "description": "TanStack Query for Svelte"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Query Repository",
+    "url": "https://github.com/TanStack/query.git",
+    "description": "TanStack Query source code (47k+ stars)"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Table Introduction",
+    "url": "https://tanstack.com/table/latest/docs/introduction",
+    "description": "Headless table library core concepts"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Table React Docs",
+    "url": "https://tanstack.com/table/latest/docs/framework/react",
+    "description": "TanStack Table for React"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Table Vue Docs",
+    "url": "https://tanstack.com/table/latest/docs/installation",
+    "description": "TanStack Table for Vue"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Table Solid Docs",
+    "url": "https://tanstack.com/table/v8/docs/framework/solid/svelte-table",
+    "description": "TanStack Table for Solid"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Table Svelte Docs",
+    "url": "https://tanstack.com/table/v8/docs/framework/svelte/svelte-table",
+    "description": "TanStack Table for Svelte"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Table Angular Docs",
+    "url": "https://tanstack.com/table/latest/docs/framework/angular",
+    "description": "TanStack Table for Angular"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Table Repository",
+    "url": "https://github.com/TanStack/table.git",
+    "description": "TanStack Table source code (27k+ stars)"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Form React Docs",
+    "url": "https://tanstack.com/form/latest/docs/framework/react",
+    "description": "Headless form state management for React"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Form Vue Docs",
+    "url": "https://tanstack.com/form/latest/docs/framework/vue",
+    "description": "TanStack Form for Vue"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Form Angular Docs",
+    "url": "https://tanstack.com/form/latest/docs/installation",
+    "description": "TanStack Form for Angular"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Form Solid Docs",
+    "url": "https://tanstack.com/form/latest/docs/framework/solid",
+    "description": "TanStack Form for Solid"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Form Svelte Docs",
+    "url": "https://tanstack.com/form/v1/docs/framework/svelte/guides/basic-concepts",
+    "description": "TanStack Form for Svelte"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Form Repository",
+    "url": "https://github.com/TanStack/form.git",
+    "description": "TanStack Form source code (6k+ stars)"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Virtual Introduction",
+    "url": "https://tanstack.com/virtual/latest/docs/introduction",
+    "description": "Virtualization for large element lists"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Virtual React Examples",
+    "url": "https://tanstack.com/virtual/latest/docs/framework/react/examples/dynamic",
+    "description": "Virtual scrolling for React"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Virtual Repository",
+    "url": "https://github.com/TanStack/virtual.git",
+    "description": "TanStack Virtual source code (6.5k+ stars)"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Store Overview",
+    "url": "https://tanstack.com/store/latest/docs",
+    "description": "Framework-agnostic immutable reactive store"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Store React Quick Start",
+    "url": "https://tanstack.com/store/latest/docs/framework/react/quick-start",
+    "description": "TanStack Store for React"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Store Repository",
+    "url": "https://github.com/TanStack/store.git",
+    "description": "TanStack Store source code (671 stars)"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack DB Overview",
+    "url": "https://tanstack.com/db/latest/docs",
+    "description": "Reactive client-first store for API data"
+  },
+  {
+    "type": "git",
+    "name": "TanStack DB Repository",
+    "url": "https://github.com/TanStack/db.git",
+    "description": "TanStack DB source code (3.3k+ stars)"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Pacer Overview",
+    "url": "https://tanstack.com/pacer/latest/docs/overview",
+    "description": "Rate limiting and async utilities"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Pacer Repository",
+    "url": "https://github.com/TanStack/pacer.git",
+    "description": "TanStack Pacer source code"
+  },
+  {
+    "type": "web_scrape",
+    "name": "TanStack Ranger Overview",
+    "url": "https://tanstack.com/ranger/latest/docs/overview",
+    "description": "Headless range slider utilities"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Ranger Repository",
+    "url": "https://github.com/TanStack/ranger.git",
+    "description": "TanStack Ranger source code (814 stars)"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Devtools",
+    "url": "https://github.com/TanStack/devtools.git",
+    "description": "Unified devtools for TanStack libraries"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Time",
+    "url": "https://github.com/TanStack/time.git",
+    "description": "Time and calendar component utilities"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Select",
+    "url": "https://github.com/TanStack/select.git",
+    "description": "Select and autocomplete primitives"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Bling",
+    "url": "https://github.com/TanStack/bling.git",
+    "description": "Framework-agnostic transpilation utilities (1.5k+ stars)"
+  },
+  {
+    "type": "git",
+    "name": "Create TanStack Router App",
+    "url": "https://github.com/TanStack/create-tsrouter-app.git",
+    "description": "Create TanStack Router SPA scaffold (1k+ stars)"
+  },
+  {
+    "type": "git",
+    "name": "TanStack Documentation Site",
+    "url": "https://github.com/TanStack/tanstack.com.git",
+    "description": "TanStack.com source code (786 stars)"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Documentation Portal",
+    "url": "https://docs.stripe.com/",
+    "description": "Main Stripe documentation hub"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe API Reference",
+    "url": "https://docs.stripe.com/api",
+    "description": "Complete REST API reference"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Payment Intents",
+    "url": "https://docs.stripe.com/payments/payment-intents",
+    "description": "Payment Intents API documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Checkout",
+    "url": "https://docs.stripe.com/payments/checkout/how-checkout-works",
+    "description": "Checkout integration guide"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Elements & Components",
+    "url": "https://docs.stripe.com/sdks/stripejs-esmodule",
+    "description": "Client-side JavaScript SDK"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Webhooks",
+    "url": "https://docs.stripe.com/webhooks",
+    "description": "Webhook integration guide"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Billing Subscriptions",
+    "url": "https://docs.stripe.com/billing/subscriptions/overview",
+    "description": "Subscription management documentation"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Connect Platform",
+    "url": "https://docs.stripe.com/connect",
+    "description": "Connect platform for marketplaces"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Radar Fraud Prevention",
+    "url": "https://docs.stripe.com/radar",
+    "description": "Fraud detection and prevention"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Terminal POS",
+    "url": "https://docs.stripe.com/terminal",
+    "description": "In-person payment acceptance"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Testing Guide",
+    "url": "https://docs.stripe.com/testing",
+    "description": "Test card numbers and scenarios"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Customer Portal",
+    "url": "https://docs.stripe.com/customer-management/integrate-customer-portal",
+    "description": "Self-service subscription management"
+  },
+  {
+    "type": "web_scrape",
+    "name": "Stripe Save Payment Methods",
+    "url": "https://docs.stripe.com/payments/save-and-reuse",
+    "description": "Store and reuse customer payment details"
+  },
+  {
+    "type": "git",
+    "name": "Stripe Python SDK",
+    "url": "https://github.com/stripe/stripe-python.git",
+    "description": "Official Python library for Stripe API"
+  },
+  {
+    "type": "git",
+    "name": "Stripe Node.js SDK",
+    "url": "https://github.com/stripe/stripe-node.git",
+    "description": "Official Node.js library for Stripe API"
+  },
+  {
+    "type": "git",
+    "name": "Stripe Ruby SDK",
+    "url": "https://github.com/stripe/stripe-ruby.git",
+    "description": "Official Ruby library for Stripe API"
+  },
+  {
+    "type": "git",
+    "name": "Stripe PHP SDK",
+    "url": "https://github.com/stripe/stripe-php.git",
+    "description": "Official PHP library for Stripe API"
+  },
+  {
+    "type": "git",
+    "name": "Stripe Go SDK",
+    "url": "https://github.com/stripe/stripe-go.git",
+    "description": "Official Go library for Stripe API"
+  },
+  {
+    "type": "git",
+    "name": "Stripe Java SDK",
+    "url": "https://github.com/stripe/stripe-java.git",
+    "description": "Official Java library for Stripe API"
+  },
+  {
+    "type": "git",
+    "name": "Stripe .NET SDK",
+    "url": "https://github.com/stripe/stripe-dotnet.git",
+    "description": "Official .NET library for Stripe API"
+  },
+  {
+    "type": "git",
+    "name": "Stripe iOS SDK",
+    "url": "https://github.com/stripe/stripe-ios.git",
+    "description": "Official iOS SDK with Apple Pay"
+  },
+  {
+    "type": "git",
+    "name": "Stripe Android SDK",
+    "url": "https://github.com/stripe/stripe-android.git",
+    "description": "Official Android SDK with Google Pay"
+  },
+  {
+    "type": "git",
+    "name": "Stripe CLI",
+    "url": "https://github.com/stripe/stripe-cli.git",
+    "description": "Command-line tool for Stripe testing"
+  },
+  {
+    "type": "git",
+    "name": "React Stripe.js",
+    "url": "https://github.com/stripe/react-stripe-js.git",
+    "description": "Official React components for Stripe"
+  },
+  {
+    "type": "git",
+    "name": "Stripe.js Loader",
+    "url": "https://github.com/stripe/stripe-js.git",
+    "description": "JavaScript loading wrapper"
+  },
+  {
+    "type": "git",
+    "name": "Stripe Samples",
+    "url": "https://github.com/stripe-samples/accept-a-payment.git",
+    "description": "Integration examples and templates"
+  },
+  {
+    "type": "git",
+    "name": "Stripe Postman Collection",
+    "url": "https://github.com/stripe/stripe-postman.git",
+    "description": "Postman collection for Stripe API"
+  },
+  {
+    "name": "PostgreSQL Official Documentation",
+    "type": "web_scrape",
+    "url": "https://www.postgresql.org/docs/",
+    "destination": "scraped/postgresql_docs"
+  },
+  {
+    "name": "MySQL Documentation",
+    "type": "web_scrape",
+    "url": "https://dev.mysql.com/doc/",
+    "destination": "scraped/mysql_docs"
+  },
+  {
+    "name": "Prisma ORM",
+    "type": "git",
+    "url": "https://github.com/prisma/prisma.git",
+    "destination": "repos/prisma_orm"
+  },
+  {
+    "name": "Drizzle ORM",
+    "type": "git",
+    "url": "https://github.com/drizzle-team/drizzle-orm.git",
+    "destination": "repos/drizzle_orm"
+  },
+  {
+    "name": "AWS Lambda Documentation",
+    "type": "web_scrape",
+    "url": "https://docs.aws.amazon.com/lambda/",
+    "destination": "scraped/aws_lambda_docs"
+  },
+  {
+    "name": "Vercel Deployment Documentation",
+    "type": "web_scrape",
+    "url": "https://vercel.com/docs",
+    "destination": "scraped/vercel_docs"
+  },
+  {
+    "name": "CloudFlare Workers Documentation",
+    "type": "web_scrape",
+    "url": "https://developers.cloudflare.com/workers/",
+    "destination": "scraped/cloudflare_workers_docs"
+  },
+  {
+    "name": "OpenTelemetry Documentation",
+    "type": "git",
+    "url": "https://github.com/open-telemetry/opentelemetry-io.git",
+    "destination": "repos/opentelemetry_docs"
+  },
+  {
+    "name": "Auth0 Documentation",
+    "type": "web_scrape",
+    "url": "https://auth0.com/docs",
+    "destination": "scraped/auth0_docs"
+  },
+  {
+    "name": "Socket.io Documentation",
+    "type": "git",
+    "url": "https://github.com/socketio/socket.io.git",
+    "destination": "repos/socketio"
+  },
+  {
+    "name": "Redis Official Documentation",
+    "type": "web_scrape",
+    "url": "https://redis.io/docs/",
+    "destination": "scraped/redis_docs"
+  },
+  {
+    "name": "Elasticsearch Documentation",
+    "type": "git",
+    "url": "https://github.com/elastic/docs.git",
+    "destination": "repos/elasticsearch_docs"
+  },
+  {
+    "name": "Meilisearch Documentation",
+    "type": "git",
+    "url": "https://github.com/meilisearch/documentation.git",
+    "destination": "repos/meilisearch_docs"
+  },
+  {
+    "name": "NestJS Framework",
+    "type": "git",
+    "url": "https://github.com/nestjs/nest.git",
+    "destination": "repos/nestjs"
+  },
+  {
+    "name": "Fastify Framework",
+    "type": "git",
+    "url": "https://github.com/fastify/fastify.git",
+    "destination": "repos/fastify"
+  },
+  {
+    "name": "GraphQL Official Documentation",
+    "type": "web_scrape",
+    "url": "https://graphql.org/learn/",
+    "destination": "scraped/graphql_docs"
+  },
+  {
+    "name": "gRPC Documentation",
+    "type": "web_scrape",
+    "url": "https://grpc.io/docs/",
+    "destination": "scraped/grpc_docs"
+  },
+  {
+    "name": "Kong API Gateway",
+    "type": "git",
+    "url": "https://github.com/Kong/kong.git",
+    "destination": "repos/kong"
+  },
+  {
+    "name": "RabbitMQ Documentation",
+    "type": "web_scrape",
+    "url": "https://www.rabbitmq.com/documentation.html",
+    "destination": "scraped/rabbitmq_docs"
+  },
+  {
+    "name": "Apache Kafka",
+    "type": "git",
+    "url": "https://github.com/apache/kafka.git",
+    "destination": "repos/kafka"
+  },
+  {
+    "name": "Bull - Node.js Job Queue",
+    "type": "git",
+    "url": "https://github.com/OptimalBits/bull.git",
+    "destination": "repos/bull"
+  },
+  {
+    "name": "SendGrid Documentation",
+    "type": "web_scrape",
+    "url": "https://sendgrid.com/docs/",
+    "destination": "scraped/sendgrid_docs"
+  },
+  {
+    "name": "Twilio Documentation",
+    "type": "web_scrape",
+    "url": "https://www.twilio.com/docs/",
+    "destination": "scraped/twilio_docs"
+  },
+  {
+    "name": "SignalR Documentation",
+    "type": "web_scrape",
+    "url": "https://learn.microsoft.com/en-us/aspnet/core/signalr/",
+    "destination": "scraped/signalr_docs"
+  },
+  {
+    "name": "Webpack",
+    "type": "git",
+    "url": "https://github.com/webpack/webpack.git",
+    "destination": "repos/webpack"
+  },
+  {
+    "name": "Vite",
+    "type": "git",
+    "url": "https://github.com/vitejs/vite.git",
+    "destination": "repos/vite"
+  },
+  {
+    "name": "Turbopack",
+    "type": "git",
+    "url": "https://github.com/vercel/turbo.git",
+    "destination": "repos/turbo"
+  },
+  {
+    "name": "ESLint",
+    "type": "git",
+    "url": "https://github.com/eslint/eslint.git",
+    "destination": "repos/eslint"
+  },
+  {
+    "name": "Sentry Error Tracking",
+    "type": "web_scrape",
+    "url": "https://docs.sentry.io/",
+    "destination": "scraped/sentry_docs"
+  },
+  {
+    "name": "GitLab CI/CD",
+    "type": "web_scrape",
+    "url": "https://docs.gitlab.com/ee/ci/",
+    "destination": "scraped/gitlab_ci_docs"
+  },
+  {
+    "name": "Datadog Documentation",
+    "type": "web_scrape",
+    "url": "https://docs.datadoghq.com/",
+    "destination": "scraped/datadog_docs"
+  },
+  {
+    "name": "New Relic Documentation",
+    "type": "web_scrape",
+    "url": "https://docs.newrelic.com/",
+    "destination": "scraped/newrelic_docs"
+  },
+  {
+    "name": "Prometheus Documentation",
+    "type": "web_scrape",
+    "url": "https://prometheus.io/docs/",
+    "destination": "scraped/prometheus_docs"
+  },
+  {
+    "name": "Grafana Documentation",
+    "type": "web_scrape",
+    "url": "https://grafana.com/docs/",
+    "destination": "scraped/grafana_docs"
+  },
+  {
+    "name": "Jaeger Tracing",
+    "type": "git",
+    "url": "https://github.com/jaegertracing/jaeger.git",
+    "destination": "repos/jaeger"
+  },
+  {
+    "name": "D3.js",
+    "type": "git",
+    "url": "https://github.com/d3/d3.git",
+    "destination": "repos/d3js"
+  },
+  {
+    "name": "Recharts",
+    "type": "git",
+    "url": "https://github.com/recharts/recharts.git",
+    "destination": "repos/recharts"
+  },
+  {
+    "name": "Apache Superset",
+    "type": "git",
+    "url": "https://github.com/apache/superset.git",
+    "destination": "repos/superset"
+  },
+  {
+    "name": "Kubernetes Documentation",
+    "type": "web_scrape",
+    "url": "https://kubernetes.io/docs/",
+    "destination": "scraped/kubernetes_docs"
+  },
+  {
+    "name": "Docker Compose",
+    "type": "git",
+    "url": "https://github.com/docker/compose.git",
+    "destination": "repos/docker_compose"
+  },
+  {
+    "name": "Consul by HashiCorp",
+    "type": "git",
+    "url": "https://github.com/hashicorp/consul.git",
+    "destination": "repos/consul"
+  },
+  {
+    "name": "Strapi Headless CMS",
+    "type": "git",
+    "url": "https://github.com/strapi/strapi.git",
+    "destination": "repos/strapi"
+  },
+  {
+    "name": "Docusaurus Documentation",
+    "type": "git",
+    "url": "https://github.com/facebook/docusaurus.git",
+    "destination": "repos/docusaurus"
+  },
+  {
+    "name": "Astro Framework",
+    "type": "git",
+    "url": "https://github.com/withastro/astro.git",
+    "destination": "repos/astro"
+  },
+  {
+    "name": "Commander.js CLI",
+    "type": "git",
+    "url": "https://github.com/tj/commander.js.git",
+    "destination": "repos/commander"
+  },
+  {
+    "name": "Hardhat Ethereum Dev",
+    "type": "git",
+    "url": "https://github.com/NomicFoundation/hardhat.git",
+    "destination": "repos/hardhat"
+  },
+  {
+    "name": "Wagmi Web3 Hooks",
+    "type": "git",
+    "url": "https://github.com/wevm/wagmi.git",
+    "destination": "repos/wagmi"
+  },
+  {
+    "name": "FFmpeg Multimedia",
+    "type": "web_scrape",
+    "url": "https://ffmpeg.org/documentation.html",
+    "destination": "scraped/ffmpeg_docs"
+  },
+  {
+    "name": "Mapbox Maps SDK",
+    "type": "web_scrape",
+    "url": "https://docs.mapbox.com/",
+    "destination": "scraped/mapbox_docs"
+  },
+  {
+    "name": "MLflow ML Ops",
+    "type": "git",
+    "url": "https://github.com/mlflow/mlflow.git",
+    "destination": "repos/mlflow"
+  },
+  {
+    "name": "Figma Plugin Development",
+    "type": "git",
+    "url": "https://github.com/figma/plugin-samples.git",
+    "destination": "repos/figma_plugins"
+  },
+  {
+    "name": "GIMP Scripting",
+    "type": "git",
+    "url": "https://github.com/GNOME/gimp.git",
+    "destination": "repos/gimp_scripting"
+  },
+  {
+    "name": "ImageMagick Automation",
+    "type": "git",
+    "url": "https://github.com/ImageMagick/ImageMagick.git",
+    "destination": "repos/imagemagick"
+  },
+  {
+    "name": "Shopify Design System",
+    "type": "git",
+    "url": "https://github.com/Shopify/polaris.git",
+    "destination": "repos/shopify_polaris"
+  },
+  {
+    "name": "SVG Optimization",
+    "type": "git",
+    "url": "https://github.com/svg/svgo.git",
+    "destination": "repos/svgo"
+  },
+  {
+    "name": "Fabric.js Canvas",
+    "type": "git",
+    "url": "https://github.com/fabricjs/fabric.js.git",
+    "destination": "repos/fabricjs"
+  },
+  {
+    "name": "Potrace Vector Tracing",
+    "type": "git",
+    "url": "https://github.com/potrace/potrace.git",
+    "destination": "repos/potrace"
+  },
+  {
+    "name": "Chroma.js Color",
+    "type": "git",
+    "url": "https://github.com/chroma-js/chroma.js.git",
+    "destination": "repos/chroma_js"
+  },
+  {
+    "name": "FontTools Font Generation",
+    "type": "git",
+    "url": "https://github.com/fonttools/fonttools.git",
+    "destination": "repos/fonttools"
+  },
+  {
+    "name": "Microsoft Fluent UI",
+    "type": "git",
+    "url": "https://github.com/microsoft/fluentui.git",
+    "destination": "repos/fluent_ui"
+  },
+  {
+    "name": "WeasyPrint PDF Generation",
+    "type": "git",
+    "url": "https://github.com/Kozea/WeasyPrint.git",
+    "destination": "repos/weasyprint"
+  },
+  {
+    "name": "Pillow Image Library",
+    "type": "git",
+    "url": "https://github.com/python-pillow/Pillow.git",
+    "destination": "repos/pillow"
+  },
+  {
+    "name": "Cairo Graphics",
+    "type": "git",
+    "url": "https://github.com/freedesktop/cairo.git",
+    "destination": "repos/cairo"
+  },
+  {
+    "name": "Inkscape SVG Editor",
+    "type": "git",
+    "url": "https://github.com/inkscape/inkscape.git",
+    "destination": "repos/inkscape"
+  },
+  {
+    "name": "PDF.js PDF Rendering",
+    "type": "git",
+    "url": "https://github.com/mozilla/pdf.js.git",
+    "destination": "repos/pdfjs"
+  },
+  {
+    "name": "DTF Industry Research 2025",
+    "type": "local",
+    "url": "local",
+    "destination": "research/dtf_2025"
+  },
+  {
+    "name": "Garment Printer DTF Guide",
+    "type": "web_scrape",
+    "url": "https://www.garmentprinter.com/",
+    "destination": "scraped/garment_printer"
+  },
+  {
+    "name": "DTF Hotspot Blog",
+    "type": "web_scrape",
+    "url": "https://www.dtfhotspot.com/",
+    "destination": "scraped/dtf_hotspot"
+  },
+  {
+    "name": "Heat Transfer Guides",
+    "type": "web_scrape",
+    "url": "https://www.htvront.com/blogs",
+    "destination": "scraped/htvront_guides"
+  },
+  {
+    "name": "DTF Film Specifications",
+    "type": "web_scrape",
+    "url": "https://www.dtfFilm.com/",
+    "destination": "scraped/dtf_film"
+  },
+  {
+    "name": "White Ink Chemistry",
+    "type": "web_scrape",
+    "url": "https://www.plastisol.org/",
+    "destination": "scraped/white_ink_chemistry"
+  },
+  {
+    "name": "Color Management Science",
+    "type": "web_scrape",
+    "url": "https://www.colormanagement.org/",
+    "destination": "scraped/color_science"
+  },
+  {
+    "name": "Textile Printing Standards",
+    "type": "web_scrape",
+    "url": "https://www.aatcc.org/",
+    "destination": "scraped/aatcc_standards"
+  },
+  {
+    "name": "RIP Software Documentation",
+    "type": "web_scrape",
+    "url": "https://www.ricohguidetech.com/",
+    "destination": "scraped/rip_documentation"
+  },
+  {
+    "name": "Heat Press Safety Standards",
+    "type": "web_scrape",
+    "url": "https://www.osha.gov/",
+    "destination": "scraped/heat_press_safety"
+  },
+  {
+    "name": "Garment Quality Standards",
+    "type": "web_scrape",
+    "url": "https://www.astm.org/",
+    "destination": "scraped/garment_standards"
+  },
+  {
+    "name": "DTF Production Scheduling",
+    "type": "web_scrape",
+    "url": "https://www.shopify.com/blog/manufacturing",
+    "destination": "scraped/production_scheduling"
+  },
+  {
+    "name": "Ink Supply Chain",
+    "type": "web_scrape",
+    "url": "https://www.xrite.com/",
+    "destination": "scraped/ink_supply"
+  },
+  {
+    "name": "Environmental Compliance",
+    "type": "web_scrape",
+    "url": "https://www.epa.gov/",
+    "destination": "scraped/epa_compliance"
+  },
+  {
+    "name": "Profitability Analysis DTF",
+    "type": "web_scrape",
+    "url": "https://www.entrepreneur.com/",
+    "destination": "scraped/dtf_profitability"
+  },
+  {
+    "name": "DTF Equipment Reviews",
+    "type": "web_scrape",
+    "url": "https://www.printful.com/blog",
+    "destination": "scraped/equipment_reviews"
+  },
+  {
+    "name": "Material Sourcing Guide",
+    "type": "web_scrape",
+    "url": "https://www.alibaba.com/",
+    "destination": "scraped/material_sourcing"
+  },
+  {
+    "name": "Cost Analysis Spreadsheets",
+    "type": "local",
+    "url": "local",
+    "destination": "research/dtf_cost_models"
+  },
+  {
+    "name": "Odoo ERP System",
+    "type": "git",
+    "url": "https://github.com/odoo/odoo.git",
+    "destination": "repos/odoo"
+  },
+  {
+    "name": "ERPNext",
+    "type": "git",
+    "url": "https://github.com/frappe/erpnext.git",
+    "destination": "repos/erpnext"
+  },
+  {
+    "name": "Invoice Ninja",
+    "type": "git",
+    "url": "https://github.com/invoiceninja/invoiceninja.git",
+    "destination": "repos/invoice_ninja"
+  },
+  {
+    "name": "Akaunting Accounting",
+    "type": "git",
+    "url": "https://github.com/akaunting/akaunting.git",
+    "destination": "repos/akaunting"
+  },
+  {
+    "name": "Mautic Marketing Automation",
+    "type": "git",
+    "url": "https://github.com/mauticiens/mautic.git",
+    "destination": "repos/mautic"
+  },
+  {
+    "name": "Postal Mail Server",
+    "type": "git",
+    "url": "https://github.com/atech/postal.git",
+    "destination": "repos/postal"
+  },
+  {
+    "name": "Nodemailer Email",
+    "type": "git",
+    "url": "https://github.com/nodemailer/nodemailer.git",
+    "destination": "repos/nodemailer"
+  },
+  {
+    "name": "Apache Airflow Workflows",
+    "type": "git",
+    "url": "https://github.com/apache/airflow.git",
+    "destination": "repos/airflow"
+  },
+  {
+    "name": "Temporal Workflows",
+    "type": "git",
+    "url": "https://github.com/temporalio/temporal.git",
+    "destination": "repos/temporal"
+  },
+  {
+    "name": "Prefect Workflows",
+    "type": "git",
+    "url": "https://github.com/PrefectHQ/prefect.git",
+    "destination": "repos/prefect"
+  },
+  {
+    "name": "n8n Automation Platform",
+    "type": "git",
+    "url": "https://github.com/n8n-io/n8n.git",
+    "destination": "repos/n8n"
+  },
+  {
+    "name": "Make Automation",
+    "type": "web_scrape",
+    "url": "https://www.make.com/",
+    "destination": "scraped/make_automation"
+  },
+  {
+    "name": "Zapier Integration",
+    "type": "web_scrape",
+    "url": "https://zapier.com/",
+    "destination": "scraped/zapier"
+  },
+  {
+    "name": "IFTTT Automation",
+    "type": "web_scrape",
+    "url": "https://ifttt.com/",
+    "destination": "scraped/ifttt"
+  },
+  {
+    "name": "Shopify API",
+    "type": "web_scrape",
+    "url": "https://shopify.dev/api",
+    "destination": "scraped/shopify_api"
+  },
+  {
+    "name": "WooCommerce Plugin Dev",
+    "type": "git",
+    "url": "https://github.com/woocommerce/woocommerce.git",
+    "destination": "repos/woocommerce"
+  },
+  {
+    "name": "BigCommerce API",
+    "type": "web_scrape",
+    "url": "https://developer.bigcommerce.com/",
+    "destination": "scraped/bigcommerce_api"
+  },
+  {
+    "name": "Magento eCommerce",
+    "type": "git",
+    "url": "https://github.com/magento/magento2.git",
+    "destination": "repos/magento"
+  },
+  {
+    "name": "Prestashop",
+    "type": "git",
+    "url": "https://github.com/PrestaShop/PrestaShop.git",
+    "destination": "repos/prestashop"
+  },
+  {
+    "name": "Medusa eCommerce",
+    "type": "git",
+    "url": "https://github.com/medusajs/medusa.git",
+    "destination": "repos/medusa"
+  },
+  {
+    "name": "Saleor Commerce",
+    "type": "git",
+    "url": "https://github.com/saleor/saleor.git",
+    "destination": "repos/saleor"
+  },
+  {
+    "name": "Vue Storefront",
+    "type": "git",
+    "url": "https://github.com/vuestorefront/vue-storefront.git",
+    "destination": "repos/vue_storefront"
+  },
+  {
+    "name": "Sylius eCommerce",
+    "type": "git",
+    "url": "https://github.com/Sylius/Sylius.git",
+    "destination": "repos/sylius"
+  },
+  {
+    "name": "OpenCart",
+    "type": "git",
+    "url": "https://github.com/opencart/opencart.git",
+    "destination": "repos/opencart"
+  },
+  {
+    "name": "Bagisto Laravel Commerce",
+    "type": "git",
+    "url": "https://github.com/bagisto/bagisto.git",
+    "destination": "repos/bagisto"
+  },
+  {
+    "name": "Webiny Headless CMS",
+    "type": "git",
+    "url": "https://github.com/webiny/webiny-js.git",
+    "destination": "repos/webiny"
+  },
+  {
+    "name": "OpenAPI Specification",
+    "type": "git",
+    "url": "https://github.com/OAI/OpenAPI-Specification.git",
+    "destination": "repos/openapi_spec"
+  },
+  {
+    "name": "OpenAPI Generator",
+    "type": "git",
+    "url": "https://github.com/OpenAPITools/openapi-generator.git",
+    "destination": "repos/openapi_generator"
+  },
+  {
+    "name": "Swagger UI",
+    "type": "git",
+    "url": "https://github.com/swagger-api/swagger-ui.git",
+    "destination": "repos/swagger_ui"
+  },
+  {
+    "name": "SwaggerHub API Platform",
+    "type": "web_scrape",
+    "url": "https://swagger.io/",
+    "destination": "scraped/swaggerhub"
+  },
+  {
+    "name": "Odoo ERP",
+    "type": "git",
+    "url": "https://github.com/odoo/odoo.git",
+    "destination": "repos/odoo_erp"
+  },
+  {
+    "name": "ERPNext",
+    "type": "git",
+    "url": "https://github.com/frappe/erpnext.git",
+    "destination": "repos/erpnext"
+  },
+  {
+    "name": "GnuCash Accounting",
+    "type": "git",
+    "url": "https://github.com/Gnucash/gnucash.git",
+    "destination": "repos/gnucash"
+  },
+  {
+    "name": "Invoice Ninja",
+    "type": "git",
+    "url": "https://github.com/invoiceninja/invoiceninja.git",
+    "destination": "repos/invoice_ninja"
+  },
+  {
+    "name": "Akaunting Accounting",
+    "type": "git",
+    "url": "https://github.com/akaunting/akaunting.git",
+    "destination": "repos/akaunting"
+  },
+  {
+    "name": "Mautic Email Marketing Automation",
+    "type": "git",
+    "url": "https://github.com/mautic/mautic.git",
+    "destination": "repos/mautic"
+  },
+  {
+    "name": "Postal Mail Server",
+    "type": "git",
+    "url": "https://github.com/atech/postal.git",
+    "destination": "repos/postal"
+  },
+  {
+    "name": "Nodemailer Email",
+    "type": "git",
+    "url": "https://github.com/nodemailer/nodemailer.git",
+    "destination": "repos/nodemailer"
+  },
+  {
+    "name": "Apache Airflow Workflow",
+    "type": "git",
+    "url": "https://github.com/apache/airflow.git",
+    "destination": "repos/airflow"
+  },
+  {
+    "name": "Temporal Distributed Workflows",
+    "type": "git",
+    "url": "https://github.com/temporalio/temporal.git",
+    "destination": "repos/temporal"
+  },
+  {
+    "name": "Prefect Modern Workflows",
+    "type": "git",
+    "url": "https://github.com/PrefectHQ/prefect.git",
+    "destination": "repos/prefect"
+  },
+  {
+    "name": "n8n Workflow Automation",
+    "type": "git",
+    "url": "https://github.com/n8n-io/n8n.git",
+    "destination": "repos/n8n"
+  },
+  {
+    "name": "Make Automation Platform",
+    "type": "web_scrape",
+    "url": "https://www.make.com/",
+    "destination": "scraped/make_docs"
+  },
+  {
+    "name": "Zapier Integration Automation",
+    "type": "web_scrape",
+    "url": "https://zapier.com/",
+    "destination": "scraped/zapier_docs"
+  },
+  {
+    "name": "Florida Business Law Resources",
+    "type": "web_scrape",
+    "url": "https://dos.myflorida.com/",
+    "destination": "scraped/florida_dos"
+  },
+  {
+    "name": "Orlando Business Registration",
+    "type": "web_scrape",
+    "url": "https://www.orlando.gov/business",
+    "destination": "scraped/orlando_business"
+  },
+  {
+    "name": "Florida Bar Association",
+    "type": "web_scrape",
+    "url": "https://www.floridabar.org/",
+    "destination": "scraped/florida_bar"
+  },
+  {
+    "name": "Legal Document Automation (DocAssemble)",
+    "type": "git",
+    "url": "https://github.com/jhpyle/docassemble.git",
+    "destination": "repos/docassemble"
+  },
+  {
+    "name": "Contract Management",
+    "type": "web_scrape",
+    "url": "https://www.contractworks.com/",
+    "destination": "scraped/contract_automation"
+  },
+  {
+    "name": "Business Formation Automation",
+    "type": "web_scrape",
+    "url": "https://www.legalzoom.com/",
+    "destination": "scraped/legal_formation"
+  },
+  {
+    "name": "SaaS Legal & Compliance",
+    "type": "web_scrape",
+    "url": "https://www.saasbase.com/",
+    "destination": "scraped/saas_compliance"
+  },
+  {
+    "name": "Software Patent & IP Law",
+    "type": "web_scrape",
+    "url": "https://www.uspto.gov/patents",
+    "destination": "scraped/uspto_patents"
+  },
+  {
+    "name": "Startup Law Resources",
+    "type": "web_scrape",
+    "url": "https://www.ycombinator.com/library",
+    "destination": "scraped/yc_startup_law"
+  },
+  {
+    "name": "Small Business Grants",
+    "type": "web_scrape",
+    "url": "https://www.grants.gov/",
+    "destination": "scraped/federal_grants"
+  },
+  {
+    "name": "SBA Funding Resources",
+    "type": "web_scrape",
+    "url": "https://www.sba.gov/funding-loans",
+    "destination": "scraped/sba_funding"
+  },
+  {
+    "name": "Patent Search Database",
+    "type": "web_scrape",
+    "url": "https://www.patentimages.uspto.gov/",
+    "destination": "scraped/patent_search"
+  },
+  {
+    "name": "VC Due Diligence Essays",
+    "type": "web_scrape",
+    "url": "https://www.paulgraham.com/",
+    "destination": "scraped/vc_essays"
+  },
+  {
+    "name": "Cap Table & Equity Management",
+    "type": "git",
+    "url": "https://github.com/plane-dev/plane.git",
+    "destination": "repos/cap_table_tools"
+  },
+  {
+    "name": "Open Source Licenses",
+    "type": "web_scrape",
+    "url": "https://opensource.org/licenses",
+    "destination": "scraped/oss_licenses"
+  },
+  {
+    "name": "GDPR & Privacy Compliance",
+    "type": "web_scrape",
+    "url": "https://gdpr-info.eu/",
+    "destination": "scraped/gdpr_compliance"
   }
 ]

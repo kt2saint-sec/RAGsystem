@@ -27,6 +27,12 @@ def handle_git_target(target):
     """
     logging.info(f"Processing git target: {target['name']}")
     repo_url = target['url']
+
+    # Auto-generate destination if not provided
+    if 'destination' not in target:
+        safe_name = target['name'].lower().replace(' ', '_').replace('.', '_')
+        target['destination'] = f"repos/{safe_name}"
+
     destination_path = os.path.join(DATA_DIR, target['destination'])
 
     if os.path.exists(destination_path):
@@ -86,6 +92,12 @@ def handle_web_scrape_target(target):
     """
     logging.info(f"Processing web_scrape target: {target['name']}")
     url = target['url']
+
+    # Auto-generate destination if not provided
+    if 'destination' not in target:
+        safe_name = target['name'].lower().replace(' ', '_').replace('.', '_')
+        target['destination'] = f"scraped/{safe_name}"
+
     destination_dir = os.path.join(DATA_DIR, target['destination'])
     ensure_dir_exists(destination_dir)
     
